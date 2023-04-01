@@ -34,96 +34,120 @@
   <li><a href="#CCS">Week 9</a></li>
   <li><a href="#fonts">Week 10</a></li>
   <li><a href="#Bibliography">Bibliography</a></li>
-  
 </ol>
 
 <body>
   <main role="main" id="main">
     <p>Disclaimer: Please note that all information is, to the best of my capabilities, referenced from class slides. Content such as images from class slides may be used therefore this source applies. All other sourcing, if any, will be applied accordingly.</p>
     <section id="Week3">
-  <article>
-      <p><h4>What is HTML</h4></p>
-      <p><h5>Naming convention for all filenames, paths and folders</h5></p>
-      <p>Proper naming conventions for all filenames, paths and folders are as follows. 
-      <ul><li>There must be <em>no spaces</em></li>
-      <li>must be <b>all</b> lowercase</li> 
-      <li>and contain only letters, numbers and dashes (-)</li></ul>
-      <p>These pictures were helpful resources to better understand and apply the naming conventions.</p>
-      <img src="/images/hiphens.png" alt="Must only contain letters, numbers and dashes"/>
-      <img src="/images/lowercase.png" alt="All lowercase"/>
-      <img src="/images/nospaces.png" alt="Must be no spaces"/>
-
-      <p><h5>Best practices for commit messages</h5></p>
-      <p>The best practices when commiting a message are:</p>
-      <ul>
-        <li>Minimum 3 words & 10 characters</li>
-        <li>Proper spelling & grammar</li>
-        <li>Capital starting letter, no period</li>
-        <li>Must start with an imperative verb: Create, Fix, Add, Solve, etc.</li>
-        <li>Pretend every commit starts with the phrase: “This commit will…”</li>
-      </ul>
-      <p><h5>What is HTML?</h5></p> 
-      <p>HTML is the structure and content of a website. It is a declarative language</small></p>
-      <p><h5>Proper Syntax for HTML tags</h5></p> 
-      <p>The proper sintax of a tag looks like this (below):</p>
-      <p> < h1 > I am a heading < / h1 ></p>
-      <p> The 'H1' in this element is the tag name</p>
-      <p> the 'H1' when placed within the < > is described as an open tag</p>
-      <p> In this case, ' I am a heading' is the element content</p>
-      <p> < / h1> is a closing tag. Closing tags must have a forward slash</p>
-      <p>I have included an image to help understand. This was taken from our class slides. </p>
-      <img src="/images/element.png" alt="element-tag"/>
-
-      <p><h5>Explain or demonstrate commonly used html tags/elements:</h5></p>
-
-      <p>headings: h1-h6</p>
-      <p>Heading tags are used to order headings according to their importance. Starting with h1 as most important and ending with h6 as least. This also speaks to the size. h1 is the biggest leading h6 as the smallest</p>
-      <h1>This</h1>
-      <h2>is</h2>
-      <h3>an</h3>
-      <h4>example</h4>
-      <h5>of</h5>
-      <h6>order</h6>
-      <p><h6>Paragraph Tag</h6></p>
-      <p> a paragraph tag < p > defines a paragraph of text. It is a block-level element and always starts on a new line.</p>
-      <p><h6>lists</h6>></p>
-      <p>There are three types of lists</p>
-      <ol>
-        <li>Unordered List</li>
+      <article>
+        <p><h2>What is HTML</h2></p>
+        <p><h3>Naming convention for all filenames, paths and folders</h3></p>
+        <p>Proper naming conventions for all filenames, paths and folders are as follows. 
+        <ul><li>There must be <em>no spaces</em></li>
+        <li>must be <b>all</b> lowercase</li> 
+        <li>and contain only letters, numbers and dashes (-)</li></ul>
+        <p>These pictures were helpful resources to better understand and apply the naming conventions.</p>
+        <figure>
+          <img src="images/hiphens.png" alt="Proper naming conventions contains onnly letters, numbers and dashes">
+          <figcaption>This is the reference from the class slides regargind proper naming conventions. In this case, there must contain only letters, numbers and dashes.</figcaption>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/lowercase.png" alt="Proper naming conventions is all in lowercase">
+          <figcaption>This is the reference from the class slides regarding proper naming conventions. In this case, it must all be in lowercase letters</figcaption>
+        </figure>
+        <figure>
+          <img src="images/nospaces.png" alt="Proper naming conventions has no spaces">
+          <figcaption>This is the reference from the class slides regargind proper naming conventions. In this case, there must be no spaces.</figcaption>
+        </figure>
+        <p><h3>Best practices for commit messages</h3></p>
+        <p>The best practices when commiting a message are:</p>
         <ul>
-          <li>ul</li>
+          <li>Minimum 3 words & 10 characters</li>
+          <li>Proper spelling & grammar</li>
+          <li>Capital starting letter, no period</li>
+          <li>Must start with an imperative verb: Create, Fix, Add, Solve, etc.</li>
+          <li>Pretend every commit starts with the phrase: “This commit will…”</li>
         </ul>
-        <li>Ordered list</li>
-        <ul>
-          <li>ol</li>
-        </ul>
-        <li>Descriptive List</li>
-        <ul>
-          <li>dl,dt followed by dd</li>
-        </ul>
-          <li><em>it's important to note that a dl can have more have one dd, but only one dt.</em></li>
-      </ol>
-      <p>a tag</p>
-      this defines a hyperlink, which is used to link from one page to another. The most important part of an a element is the href atributs which tels the destination of the link. </p>
-      <p>img</p>
-      <p>images are not embedded in the website but are linked to the HTML document. Images need two attributes: the location of the image and the alternative content.</p>
-      <p>figure (img & figcaption)</p>
-      <p>The < figcaption > element is used to add a caption for the < figure > element.</p>
-      <p> q tag </p>
-      <p>this is used to mark quotes embedded in other elements like a paragraph</p>
-      <p>blockquote <small> this is to make a pull quote, like you would have in  an magazine</small></p>
-      <p>cite </p>
-      <p>this marks the source of the quote</p>
-      <p><h6> the em tag</h6></p> 
-      <p>used for emphasis</p>
-      <p>the strong  tag</p>
-      <p>gives strong emphasis, as in importance or urgency to text</p>
-      <p> <h6> the b tag </h6></p>
-      <p>this to give a visual component to a specific word. In this case it bolds text</p>
-      <p><h6> the i tag</h6></p>
-      <p> gives a visual component ot a specific word. In this case it italicises text</p>
-      <p>small </p> The < small > tag defines areas where small text is appropriate like copyright and other side-comments.
-  </article>
+        <p><h3>What is HTML?</h3></p> 
+        <p>HTML is the structure and content of a website. It is a declarative language</small></p>
+        <p><h3>Proper Syntax for HTML tags</h3></p> 
+        <p>The proper sintax of a tag looks like this (below):</p>
+        <p> < h1 > I am a heading < / h1 ></p>
+        <p> The 'H1' in this element is the tag name</p>
+        <p> the 'H1' when placed within the < > is described as an open tag</p>
+        <p> In this case, ' I am a heading' is the element content</p>
+        <p> < / h1> is a closing tag. Closing tags must have a forward slash</p>
+        <p>I have included an image to help understand. This was taken from our class slides. </p>
+        <figure>
+          <img src="images/element.png" alt="this is proper sintax for HTML tags">
+          <figcaption>This is the reference from the class slides regarding proper sintax for HTML.</figcaption>
+        </figure>
+        <p><h3>Explain or demonstrate commonly used html tags/elements:</h3></p>
+        <p><h4>headings: h1-h6</h4></p>
+        <p>Heading tags are used to order headings according to their importance. Starting with h1 as most important and ending with h6 as least. This also speaks to the size. h1 is the biggest leading h6 as the smallest</p>
+        <p><h1>This</h1></p>
+        <p><h2>is</h2></p>
+        <p><h3>an</h3></p>
+        <p><h4>example</h4></p>
+        <p><h5>of</h5></p>
+        <p><h6>order</h6></p>
+        <p>Please note: because you can only have one h1 the first example (this) is not accurate to proper size.</p>
+        <p><h4>Paragraph Tag</h4></p>
+        <p>a paragraph tag < p > defines a paragraph of text. It is a block-level element and always starts on a new line.</p>
+        <p><h4>Lists</h4></p>
+        <p>There are three types of lists</p>
+        <ol>
+          <li>Unordered List:</li>
+          <ul>
+            <li>These lists are by default put into bulltet form and and each element is listed using the li tag. For grouping a collection of items that do not have a numerical ordering, and their order in the list is meaningless</li>
+          <li> Uses the tag < ul > </li>
+          </ul>
+          <li>Ordered list:</li>
+          <ul>
+            <li>The elements for this list are indicated using the li tag much like an unordered list. Unlike the unordered list however, the order is of importance and by default the first element of the list will begin with 1, chronilogically decending from there. </li>
+            <li>Uses the tag < ol > </li>
+          </ul>
+          <li>Descriptive List:</li>
+          <ul>
+            <li>This list is seen in text like recipes and require a term (dt) and a description (dd) tag.</li>
+            <li><em>It's important to note that a dl can have more have one dd, but only <b>one</b> dt.</em></li>
+          </ul>
+        </ol>
+        <p><h4>The a tag</h4></p>
+        <p>This defines a hyperlink, which is used to link from one page to another. The most important part of an a element is the href atributs which tels the destination of the link. </p>
+        <p><h4>the img tag</h4></p>
+        <p>Images are not embedded in the website but are linked to the HTML document. Images need two attributes: the location of the image and the alternative content.</p>
+        <p><h4>Figure (img & figcaption)</h4></p>
+        <p>The HTML element < figure > is a self-contained content with an option caption, which is specified with the < figcaption >. The figure, its caption, and its contents are referenced as a single unit. The structre for that would look like this:</p>
+        <p>< figure ></p>
+        <p>< img src="Images / image000000.JPG" alt="animated woman doing needlework" >
+        <p>< figcaption > This is the logo for the crochet cuties < /figcaption >
+        <p></figure></p>
+        <p>Pruducing this:
+        <figure>
+          <img src="Images/image000000.JPG" alt="animated woman doing needlework">
+          <figcaption>This is the logo for the crochet cuties</figcaption>
+        </figure></p>
+        </p>
+        <p><h4> The q tag</h4></p>
+        <p>This is used to mark quotes embedded in other elements like a paragraph</p>
+        <p><h4>blockquote</h4></p>
+        <p>This is to make a pull quote, like you would have in  an magazine</p>
+        <p><h4>The cite tag</h4></p>
+        <p>This marks the source of the quote</p>
+        <p><h4>The em tag</h4></p> 
+        <p>Used for emphasis</p>
+        <p><h4>The strong tag</h4></p>
+        <p>Gives strong emphasis, as in importance or urgency to text</p>
+        <p><h4>The b tag </h4></p>
+        <p>This to give a visual component to a specific word. In this case it bolds text</p>
+        <p><h4>The i tag</h4></p>
+        <p>Gives a visual component ot a specific word. In this case it italicises text</p>
+        <p><h4>The small tag</h4></p> 
+        <p>The < small > tag defines areas where small text is appropriate like copyright and other side-comments.</p>
+    </article>
   </section>
   
   <section id="Week4">
@@ -135,52 +159,130 @@
       <p><h5>Footer</h5></p>
       <p>The footer is the botom of the webpage. It will include links, copyright informationsm extra information about the company, careers and terms and services.</p>
       <p><h5>Main</h5></p>
-      <p>The main element wraps around the main content of the page. It's used only once per page. </p>
+      <p>The main element wraps around the main content of the page. It's used only once per page.</p>
       <p><h5>Section</h5></p>
       <p>Sections are used to wrap around related pieces of content. Each section typically have their own heading.</p>
-      <p>Article</p>
-      <p> This is self-contained content in a web page. It should be distributable and reusable because of it being independent.</p>
-      <p>Aside</p>
+      <p><h4>Article</h4></p>
+      <p>This is self-contained content in a web page. It should be distributable and reusable because of it being independent.</p>
+      <p><h4>Aside</h4></p>
       <p>The aside element is uusally seen as a sidebar on a website. It represents a portion of a document that is indirectly related to the documents main content. 
-      <p><h6>A Nav Tag </h6></p>
+      <p><h4>A Nav Tag</h4></p>
       <p>The nav provides links either within the current webpage or to others.</p>
-
-      <p><h6>Linking to an element on the same page</h6></p>
-      <p>Comments</p>
-      <p>The tag to make a comment is <-- ... --> A comment is used to explain your code, or insertion points at a later date. There are not viewed in the browser.</p> 
-      <p><h5>Generic elements</h5></p> 
+      <p><h4>Comments</h4></p>
+      <p>The tag to make a comment is < ! -- ... --> A comment is used to explain your code, or insertion points at a later date. There are not viewed in the browser.</p> 
+      <p><h4>Generic elements</h4></p> 
       <p>Generic elements are used to target content which is most often used later to manipulate styling with CSS (or later with Java script)</p>
-      < divs > are blocke elements used to group elements together 
-      < span > are an inline container used to mark up a part of a text, or document.
-      <p><h5>Attributes</h5></p>
+      <p>< div > are block elements used to group elements together </p>
+      <p>< span > are an inline container used to mark up a part of a text, or document.</p>
+      <p><h4>Attributes</h4></p>
       <p>Attributes for HTML provide additional information about the HTML elements.</p>
-      <p> for example: href="" is an attribute</p>
-      <p>Linking to an absolute url/path</p>
-      <p>Absolute URLS or Absolutely Paths link websites to other resources on the internet. </p>
-      <img src="Images/AbsoluteURL.png" alt="absolute_paths">
-      <p>Linking to a relative url/path</p>
+      <p>For example: href="" is an attribute</p>
+      <p><h4> Linking to an absolute url/path</h4></p>
+      <p>Absolute URLS or Absolutely Paths link websites to other resources on the internet</p>
+      <figure>
+        <img src="Images/AbsoluteURL.png" alt="Absolute URL reference">
+        <figcaption>This is an Absoulte URL reference from class slides</figcaption>
+      </figure>
+      <p><h4>Linking to a relative url/path</h4></p>
       <p>This is a relative url or relative path. It links the path to the current page because it assumes it has the the same protocol, subdomain and domain as the page its on.</p>
-      <img src="images/RelativeURL.png" alt="relative_urls"
-      <p>Linking to an element on the same page</p> 
-      <img src="images/LInk2element.png" alt="Link_to_elements">
-      <p>Understanding nesting (parent/child relationship)</p>
-      <p>Importance of indentation</p>
-      <p>Commenting</p>
+      <figure>
+        <img src="images/RelativeURL.png" alt="Relative URL reference">
+        <figcaption>This is an Relative URL reference from class slides</figcaption>
+      </figure> 
+      <p><h4>Linking to an element on the same page</h4></p>
+      <p>Linking to an element on the same page is a little different, you need to create an anchor for the link. To do this you must give the appropriate element an id="Content" attribute.</p>
+      <figure>
+        <img src="images/LInk2element.png" alt="Linking to an element reference">
+        <figcaption>This is the linking to an element reference from class slides</figcaption>
+      </figure>
+      <p><h4>Understanding nesting (parent/child relationship)</h4></p>
+      <p>When learning HTML, the parent-child relationships of the elements is critical to good structure & code understanding. A parent is an element that is directly above and connected to an element in the document tree. An element that is directly contained by another element is said to be the child of that element.</p>
+      <p><h4>Importance of indentation</h4></p>
     </article>
   </section>
 
   <section id="Week6">
     <article>
       <p><h3>Week 6</h3></p>
-      <p>The importance of building accessible websites</p>
-      <p>Web Content Accessibility Guidelines 2.0 (WCAG)</hp> 
-      <p>Types of disabilities / impairments users may have</p>
-      <p>Tips to help with accessibility</p>
-      <p>WAI-ARIA</p>
-      <p>Landmark roles</p>
-      <p>Labeling links</p>
-      <p>Image descriptions</p>
-      <p>Skip links</p>
+      <p><h4>The importance of building accessible websites</h4></p>
+      <p>It's important to build a website that has the abilitiy to be used by everyone, hence accessibility. This includes users with disabilities. The idea is so that everyone can have the same ideal experience and be able to access the information equally.</p>
+      <p><h4>Web Content Accessibility Guidelines 2.0 (WCAG)</h4></hp> 
+      <p>Websites must comply with WCAG2.0 in order to be considered accessible. And therfore broken into four main categories called POUR.</p>
+      <ul>P.O.U.R stands for:
+        <li><b>P</b>erceivable</li>
+        <li><b>O</b>perable</li>
+        <li><b>U</b>nderstandable</li>
+        <li><b>R</b>obust</li>
+      </ul>
+      <p><b>Perceivable</b>that all information must be presented in such a way to each user despite which senses they have use of, or lack thereof.</p>
+      <p><b>Operable</b> means that each user must be able to locate, navigate and interact with webpages in a myriad of ways</p>
+      <p><b>Understandable</b> is just what it implies. All content must be understandable by its users.</p>
+      <p>Finally, <b>Robust</b> means that websites must adopt web-standards so that they will work across all browsers and assistive technologies.</p>
+      <p><h4>Types of disabilities / impairments users may have</h4></p>
+      <p>It's important to consider all types of disablities/impairements when creating websites in order to make your website accessible to all. Such disabilities/impairements include: <!--I'd like to make clickable buttons to go into detail for each subject below-->
+      <ul>
+        <li>Visual Impairements</li>
+        <li>Cognitive Impairements</li>
+        <li>Auditory Impairements</li>
+        <li>Mobility/dexterity Impairements</li>
+      </ul>
+      <p>Other helpful tips to consider when making your website accessible is to:
+      <ul>
+        <li>Semantic HTML provide extra information that help people use our website.</li>
+        <li>Keep your code & your content in your HTML documents in the order you expect them to be read </li>
+        <li>Break up your content using heading tags. They're nice visual breaks, but screen readers use them as jumping points.</li>
+      </ul>
+      <p>Visual impairements include: Blindness; partial or full, colour blindness, cataracts, glaucoma, age, etc.. </p>
+      <ul>
+        <li>Allow text to be resized</li>
+        <li>Have good contrast in colours</li>
+        <li>Test for colour blindness related issues</li>
+        <li>Website must work well with screen readers</li>
+        <li>Use proper alt attributes</li>
+      </ul>
+      <p>Cognitive impairements include: Dyslexia, memory issues, problem solving issues, attention deficits, hyperactivity,  reading abilities, etc.</p>
+      <ul>
+        <li>Make it clear where in the website the user is</li>
+        <li>Organize your content correctly</li>
+        <li>Make the text easily scannable</li>
+        <li>Clearly mark links</li>
+        <li>Use plain, simple language</li>
+      </ul>
+      <p>Auditory impairements inlcude: Deafness, partial deafness, etc.</p>
+      <ul>
+        <li>Provide text captions and subtitles - when including audio or video on your website.</li>
+        <li>Users may need closed caption while viewing videos due to language barriers or being in a noisy room.</li>
+      </ul>
+      <p>Mobility impairements include: Missing a hand, limited movement, difficulty with fine control, trouble holding a mouse, tremors or shakes, etc.</p>
+      <ul>
+        <li>Recognize and prepare for the fact that not everybody will use a mouse</li>
+        <li>Make the website keyboard accessible by making sure you are giving your users alternate ways to access your information</li>
+        <li>hit areas of links and buttons</li>
+      </ul>      
+      <p><h4>WAI-ARIA</h4></p>
+      <p><b>Web Accessibility Initiative</b> (WAI) has a specification called <b>Accessible Rich Internet Application (ARIA)</b>. ARIA helps makes web content and applications more accessible to people with disabilities or impairements by defining ways for functionality to be provided to assistive technology like screen readers, screen magnifiers, switch controls, closed captioning etc.</p>
+
+      <p><h4>Landmark roles</h4></p>
+      <p>ARIA has a set of landmark roles to help those using screen readers to jump directly to specific sections within websites. This includes roles such as:</p>
+      <ul>
+        <li>header role="banner" - this is added in the header tag for defining an element as the masthead.</li>
+        <li>nav role="navigation" - this is added to the top to define the elements as the primary navigation.</li>
+        <li>main role="main" - this is added to the main to define the element as the main content of the page.</li>
+        <li>aside role="complimentary - this is added to an aside tag as being additional content related to the primary content. </li>
+        <li>footer role="contentinfo" - this is usually added to the footer to define an element as information about the content like copy right, terms, privacy policy, careers ect.</li>
+      </ul>
+  
+      <p><h4>Labeling links</h4></p>
+      <p>This semester we have using the < aria - label="" > attribute tags to create labels in fields that have no visual label. Screen readers would give that voice to the missing visual component so that those with these impairements are not losing out on their experience when interacting with our website. <i>Note: we use the tag < role="presentation" > for screen readers to skip these labels when images have no impact on experience. </aria-label> </i</p>
+      <p><h4>Image descriptions</h4></p>
+      <p>It is imperative descriptions are added to images with an alt atribute. Thse have two purposes:
+      <ul>
+        <li>To describe a photo if it doesn't download, or,</li>
+        <li>To describe the photo via screen reader to users with visual impairemnts.</li>
+      </ul>
+      <p><i>Note: As mentioned before, you can apply role="presentation" if the image is purely decorative.</i></p>
+      <p><h4>Skip links</h4></p>
+      <p>These are placed at the top of the page and offer users a way to jump to specific areas of the page as you would have experienced when interacting with this page.</p>
     </article>
   </section>
 
@@ -211,8 +313,10 @@
     </article>
   </section>
   <section id="Bibliography">
-  <Lastname, F. M. (Year, Month Date). Title of presentation [Lecture notes, PowerPoint slides, etc]. Publisher. URL
-<Smith, C. (2017, October 13). AI and machine learning demystified [PowerPoint slides]. SlideShare. https://www.slideshare.net/carologic/ai-and-machine-learning-demystified-by-carol-smith-at-midwest-ux-2017>
+    <article>
+     
+      <p>Warren, Wendy. (2023, January 9 through to April 15th). Web Design 1. [PowerPoint slides]. Brightspace. No URL.</p>
+    </article>  
 </section>
 </body>
 </html>
