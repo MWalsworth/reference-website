@@ -19,6 +19,9 @@
 <ul>
   <li><a href="#nav">Skip to navigation</a></li>
   <li><a href="#main">Skip to the main content</a></li>
+  <li><a href="#bibliography">Skip to sourcing</a></li> 
+  <li><a href="#footer">Skip to the footer</a></li>
+  
 </ul>
 <header role="banner">
 <h1>Web Design 1 Reference Site</h1> 
@@ -26,20 +29,18 @@
 
   <nav>
 <ol>
-  <li><a href="#Week3">Week 3</a></li>
-  <li><a href="#Week4">Week 4</a></li>
-  <li><a href="#Week5">Week 5</a></li>
-  <li><a href="#Week6">Week 6</a></li>
-  <li><a href="#Week7">Week 7</a></li>
-  <li><a href="#CCS">Week 9</a></li>
-  <li><a href="#fonts">Week 10</a></li>
-  <li><a href="#Bibliography">Bibliography</a></li>
+  <li><a href="#week3">Week 3</a></li>
+  <li><a href="#weeks4-5">Weeks 4 and 5</a></li>
+  <li><a href="#week6">Week 6</a></li>
+  <li><a href="#css">CSS</a></li>
+  <li><a href="#fonts">Fonts</a></li>
+  <li><a href="#bibliography">Bibliography</a></li>
 </ol>
 
 <body>
   <main role="main" id="main">
     <p>Disclaimer: Please note that all information is, to the best of my capabilities, referenced from class slides. Content such as images from class slides may be used therefore this source applies. All other sourcing, if any, will be applied accordingly.</p>
-    <section id="Week3">
+    <section id="week3">
       <article>
         <p><h2>What is HTML</h2></p>
         <p><h3>Naming convention for all filenames, paths and folders</h3></p>
@@ -149,10 +150,9 @@
         <p>The < small > tag defines areas where small text is appropriate like copyright and other side-comments.</p>
     </article>
   </section>
-  
-  <section id="Week4">
-  <article>
-      <p><h3>Week 4</h3></p>
+  <section id="weeks4-5">
+    <article>
+      <p><h3>Week 4 & 5</h3></p>
       <p><h4>Structuring content:</h4></p>
       <p><h5>Header</h5></p>
       <p>The header is the introductory content  at the top of the page. This is where you would find logos and or navs. You may also find it within sections and articles to introduce the content for headings, subheadings and authors. </p>
@@ -162,11 +162,11 @@
       <p>The main element wraps around the main content of the page. It's used only once per page.</p>
       <p><h5>Section</h5></p>
       <p>Sections are used to wrap around related pieces of content. Each section typically have their own heading.</p>
-      <p><h4>Article</h4></p>
+      <p><h5>Article</h5></p>
       <p>This is self-contained content in a web page. It should be distributable and reusable because of it being independent.</p>
-      <p><h4>Aside</h4></p>
+      <p><h5>Aside</h5></p>
       <p>The aside element is uusally seen as a sidebar on a website. It represents a portion of a document that is indirectly related to the documents main content. 
-      <p><h4>A Nav Tag</h4></p>
+      <p><h5>A Nav Tag</h5></p>
       <p>The nav provides links either within the current webpage or to others.</p>
       <p><h4>Comments</h4></p>
       <p>The tag to make a comment is < ! -- ... --> A comment is used to explain your code, or insertion points at a later date. There are not viewed in the browser.</p> 
@@ -177,7 +177,7 @@
       <p><h4>Attributes</h4></p>
       <p>Attributes for HTML provide additional information about the HTML elements.</p>
       <p>For example: href="" is an attribute</p>
-      <p><h4> Linking to an absolute url/path</h4></p>
+      <p><h4> Linking to an absolute url/path</h4><p>
       <p>Absolute URLS or Absolutely Paths link websites to other resources on the internet</p>
       <figure>
         <img src="Images/AbsoluteURL.png" alt="Absolute URL reference">
@@ -195,13 +195,15 @@
         <img src="images/LInk2element.png" alt="Linking to an element reference">
         <figcaption>This is the linking to an element reference from class slides</figcaption>
       </figure>
+      <p>This was a helpful resource when linking.
+      <p>Click the link to <a href="https://learntheweb.courses/topics/paths-folders/">Read Here</a> to read more about absolute paths, relative paths and linking to elements</p>
       <p><h4>Understanding nesting (parent/child relationship)</h4></p>
-      <p>When learning HTML, the parent-child relationships of the elements is critical to good structure & code understanding. A parent is an element that is directly above and connected to an element in the document tree. An element that is directly contained by another element is said to be the child of that element.</p>
+      <p>When learning HTML, the parent-child relationships of the elements is critical to good structure & code understanding. A <b>parent</b> is an element that is directly above and connected to an element in the document tree. An element that is directly contained by another element is said to be the <b>child</b> of that element.</p>
       <p><h4>Importance of indentation</h4></p>
+      <p>When writing HTML it is important to properly format your code using good indentation. You can indent elements by moving them two spaces to the right. This will make your code more readable by other developers and shows the relationship between the child and parent HTML elements. (Wilkins, Jessica 2021)</p>
     </article>
   </section>
-
-  <section id="Week6">
+  <section id="week6">
     <article>
       <p><h3>Week 6</h3></p>
       <p><h4>The importance of building accessible websites</h4></p>
@@ -261,7 +263,6 @@
       </ul>      
       <p><h4>WAI-ARIA</h4></p>
       <p><b>Web Accessibility Initiative</b> (WAI) has a specification called <b>Accessible Rich Internet Application (ARIA)</b>. ARIA helps makes web content and applications more accessible to people with disabilities or impairements by defining ways for functionality to be provided to assistive technology like screen readers, screen magnifiers, switch controls, closed captioning etc.</p>
-
       <p><h4>Landmark roles</h4></p>
       <p>ARIA has a set of landmark roles to help those using screen readers to jump directly to specific sections within websites. This includes roles such as:</p>
       <ul>
@@ -271,9 +272,8 @@
         <li>aside role="complimentary - this is added to an aside tag as being additional content related to the primary content. </li>
         <li>footer role="contentinfo" - this is usually added to the footer to define an element as information about the content like copy right, terms, privacy policy, careers ect.</li>
       </ul>
-  
       <p><h4>Labeling links</h4></p>
-      <p>This semester we have using the < aria - label="" > attribute tags to create labels in fields that have no visual label. Screen readers would give that voice to the missing visual component so that those with these impairements are not losing out on their experience when interacting with our website. <i>Note: we use the tag < role="presentation" > for screen readers to skip these labels when images have no impact on experience. </aria-label> </i</p>
+      <p>This semester we have using the < aria - label="" > attribute tags to create labels in fields that have no visual label. Screen readers would give that voice to the missing visual component so that those with these impairements are not losing out on their experience when interacting with our website. <i>Note: we use the tag < role="presentation" > for screen readers to skip these labels when images have no impact on experience. </aria-label> </i></p>
       <p><h4>Image descriptions</h4></p>
       <p>It is imperative descriptions are added to images with an alt atribute. Thse have two purposes:
       <ul>
@@ -285,10 +285,9 @@
       <p>These are placed at the top of the page and offer users a way to jump to specific areas of the page as you would have experienced when interacting with this page.</p>
     </article>
   </section>
-
-  <section id="CSS">
+  <section id="css">
     <article>
-      <p><h3>Week 7</h3></p>
+      <p><h3>CSS</h3></p>
       <p>Font properties</p>
       <p>font-family</p>
       <p>font-size</p>
@@ -303,24 +302,25 @@
       <p>text-indent</p>
       <p>text-shadow</p>
   </section>
-  <section id="Fonts">
+  <section id="fonts">
     <article>
       <p><h3>CSS</h3></p>
       <p><img src="/images/DC LOGO.png" alt="DC Logo"></p>
       <p> This is the reference we used on how to add fonts from google fonts. Click the link below for a step by step</p>
       <p><a href="https://youtu.be/qgmLDPLApBY">How to add fonts</a></p>
-
     </article>
   </section>
-  <section id="Bibliography">
+  <section id="bibliography" role="bibliography">
     <article>
-     
-      <p>Warren, Wendy. (2023, January 9 through to April 15th). Web Design 1. [PowerPoint slides]. Brightspace. No URL.</p>
+    <p><h2>Bibliography</h2></p>
+    <p>Hill, Nicole. (2023, Feb 9) Private conversation. Crostitch cuties [Image].</p>
+    <p>Warren, Wendy. (2023, January 9 through to April 15th). Web Design 1. [PowerPoint slides]. Brightspace. No URL.</p>
+    <p>Wilkins, J. (2022, June 1). How to Indent HTML Code - And Why it's Important. FreeCodeCamp. Retrieved April 1, 2023, from https://www.freecodecamp.org/news/how-to-indent-in-html-and-why-it-is-important/ </p>
     </article>  
-</section>
+  </section>
 </body>
 </html>
 
-<footer role="contentinfo">
-  <p><small>&copy; 2023 Apt613.</small></p>
+<footer id="footer" role="contentinfo">
+  <p><small>&copy; 2023 Web Design 1: Assignment - Reference Website.</small></p>
 </footer>
