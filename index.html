@@ -5,6 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Design 1 Reference Site</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!--<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+ <style>
+  body {
+    font-family: 'Great Vibes', cursive;
+  }
+  </style>-->
 </head>
 
 <ul>
@@ -22,96 +31,189 @@
   <li><a href="#Week5">Week 5</a></li>
   <li><a href="#Week6">Week 6</a></li>
   <li><a href="#Week7">Week 7</a></li>
+  <li><a href="#CCS">Week 9</a></li>
+  <li><a href="#fonts">Week 10</a></li>
+  <li><a href="#Bibliography">Bibliography</a></li>
+  
 </ol>
 
-<main role="main" id="main">
-  <section id="Week3">
-<article>
-    <p><h4>Week 3</h4></p>
-    <p> Naming convention for all filenames, paths and folders</p>
-    <p>Best practices for commit messages</p>
-    <p>What is HTML? <small> HTML is the structure and content of a website. It is a declarative language</small></p>
-    <p>Proper syntax for HTML tags</p> 
-    <p>the proper sintax of a tag looks like this</p>
-    <p> < h1 > I am a heading < / h1 ></p>
-    <p> The 'H1' in this element is the tag name</p>
-    <p> the 'H1' when placed within the < > is described as an open tag</p>
-    <p> in this case, ' I am a heading' is the element content</p>
-    <p> < / h1> is a closing tag. Closing tags must have a forward slash</p>
-    <p>Explain or demonstrate commonly used html tags/elements:</p>
-    <p>headings: h1-h6</p>
-    <p>p</p>
-    <p>lists: ul, ol, dl</p>
-    <p>There are three types of lists</p>
-    <ol>
-      <li>ul 
-        <li>ul</li>
-        <li>li</li>
-      <li>ol</li>
-        <li>li</li>
-      <li>dl</li>
-      <li>dt</li>
-      <dd>dd</dd>
-      <li>dd</li>
-    </ol>
-    <p>a <small> this is an anchor </small></p>
-    <p>img</p>
-    <p>figure (img & figcaption)</p>
-    <p>q <small> this is a to make quotes.</small></p>
-    <p>blockquote <small> this is to make a pull quote, like you would have in  an magazine</small></p>
-    <p>cite </p>
-    <p>em</p>
-    <p>strong </p>
-    <p>b <small>this to give a visual component to a specific word</small></p>
-    <p>i</p>
-    <p>small </p>
- </article>
-</section>
- 
- <section id="Week4">
- <article>
-    <p><h3>Week 4</h3></p>
-    Structuring content:
-    header
-    footer
-    main
-    section
-    article
-    nav
-    Linking to an element on the same page
-    Comments
- </article>
-</section>
-<section id="week5">
+<body>
+  <main role="main" id="main">
+    <p>Disclaimer: Please note that all information is, to the best of my capabilities, referenced from class slides. Content such as images from class slides may be used therefore this source applies. All other sourcing, if any, will be applied accordingly.</p>
+    <section id="Week3">
   <article>
-    <p><h3>Week 5</h3></p>
-    <p>Generic elements - div & span</p>
-    <p>Attributes</p>
-    <p>Structuring content: header, footer, main, section, article, nav and aside</p>
-    <p>Linking to an absolute url/path</p>
-    <p>Linking to a relative url/path</p>
-    <p>Linking to an element on the same page</p> 
-    <p>Understanding nesting (parent/child relationship)</p>
-    <p>Importance of indentation</p>
-    <p>Commenting</p>
-  </article>
-</section>
+      <p><h4>What is HTML</h4></p>
+      <p><h5>Naming convention for all filenames, paths and folders</h5></p>
+      <p>Proper naming conventions for all filenames, paths and folders are as follows. 
+      <ul><li>There must be <em>no spaces</em></li>
+      <li>must be <b>all</b> lowercase</li> 
+      <li>and contain only letters, numbers and dashes (-)</li></ul>
+      <p>These pictures were helpful resources to better understand and apply the naming conventions.</p>
+      <img src="/images/hiphens.png" alt="Must only contain letters, numbers and dashes"/>
+      <img src="/images/lowercase.png" alt="All lowercase"/>
+      <img src="/images/nospaces.png" alt="Must be no spaces"/>
 
-<section id="Week6">
+      <p><h5>Best practices for commit messages</h5></p>
+      <p>The best practices when commiting a message are:</p>
+      <ul>
+        <li>Minimum 3 words & 10 characters</li>
+        <li>Proper spelling & grammar</li>
+        <li>Capital starting letter, no period</li>
+        <li>Must start with an imperative verb: Create, Fix, Add, Solve, etc.</li>
+        <li>Pretend every commit starts with the phrase: “This commit will…”</li>
+      </ul>
+      <p><h5>What is HTML?</h5></p> 
+      <p>HTML is the structure and content of a website. It is a declarative language</small></p>
+      <p><h5>Proper Syntax for HTML tags</h5></p> 
+      <p>The proper sintax of a tag looks like this (below):</p>
+      <p> < h1 > I am a heading < / h1 ></p>
+      <p> The 'H1' in this element is the tag name</p>
+      <p> the 'H1' when placed within the < > is described as an open tag</p>
+      <p> In this case, ' I am a heading' is the element content</p>
+      <p> < / h1> is a closing tag. Closing tags must have a forward slash</p>
+      <p>I have included an image to help understand. This was taken from our class slides. </p>
+      <img src="/images/element.png" alt="element-tag"/>
+
+      <p><h5>Explain or demonstrate commonly used html tags/elements:</h5></p>
+
+      <p>headings: h1-h6</p>
+      <p>Heading tags are used to order headings according to their importance. Starting with h1 as most important and ending with h6 as least. This also speaks to the size. h1 is the biggest leading h6 as the smallest</p>
+      <h1>This</h1>
+      <h2>is</h2>
+      <h3>an</h3>
+      <h4>example</h4>
+      <h5>of</h5>
+      <h6>order</h6>
+      <p><h6>Paragraph Tag</h6></p>
+      <p> a paragraph tag < p > defines a paragraph of text. It is a block-level element and always starts on a new line.</p>
+      <p><h6>lists</h6>></p>
+      <p>There are three types of lists</p>
+      <ol>
+        <li>Unordered List</li>
+        <ul>
+          <li>ul</li>
+        </ul>
+        <li>Ordered list</li>
+        <ul>
+          <li>ol</li>
+        </ul>
+        <li>Descriptive List</li>
+        <ul>
+          <li>dl,dt followed by dd</li>
+        </ul>
+          <li><em>it's important to note that a dl can have more have one dd, but only one dt.</em></li>
+      </ol>
+      <p>a tag</p>
+      this defines a hyperlink, which is used to link from one page to another. The most important part of an a element is the href atributs which tels the destination of the link. </p>
+      <p>img</p>
+      <p>images are not embedded in the website but are linked to the HTML document. Images need two attributes: the location of the image and the alternative content.</p>
+      <p>figure (img & figcaption)</p>
+      <p>The < figcaption > element is used to add a caption for the < figure > element.</p>
+      <p> q tag </p>
+      <p>this is used to mark quotes embedded in other elements like a paragraph</p>
+      <p>blockquote <small> this is to make a pull quote, like you would have in  an magazine</small></p>
+      <p>cite </p>
+      <p>this marks the source of the quote</p>
+      <p><h6> the em tag</h6></p> 
+      <p>used for emphasis</p>
+      <p>the strong  tag</p>
+      <p>gives strong emphasis, as in importance or urgency to text</p>
+      <p> <h6> the b tag </h6></p>
+      <p>this to give a visual component to a specific word. In this case it bolds text</p>
+      <p><h6> the i tag</h6></p>
+      <p> gives a visual component ot a specific word. In this case it italicises text</p>
+      <p>small </p> The < small > tag defines areas where small text is appropriate like copyright and other side-comments.
+  </article>
+  </section>
+  
+  <section id="Week4">
   <article>
-    <p><h3>Week 6</h3></p>
-    <p>The importance of building accessible websites</p>
-    <p>Web Content Accessibility Guidelines 2.0 (WCAG)</hp> 
-    <p>Types of disabilities / impairments users may have</p>
-    <p>Tips to help with accessibility</p>
-    <p>WAI-ARIA</p>
-    <p>Landmark roles</p>
-    <p>Labeling links</p>
-    <p>Image descriptions</p>
-    <p>Skip links</p>
-  </article>
-</section>
+      <p><h3>Week 4</h3></p>
+      <p><h4>Structuring content:</h4></p>
+      <p><h5>Header</h5></p>
+      <p>The header is the introductory content  at the top of the page. This is where you would find logos and or navs. You may also find it within sections and articles to introduce the content for headings, subheadings and authors. </p>
+      <p><h5>Footer</h5></p>
+      <p>The footer is the botom of the webpage. It will include links, copyright informationsm extra information about the company, careers and terms and services.</p>
+      <p><h5>Main</h5></p>
+      <p>The main element wraps around the main content of the page. It's used only once per page. </p>
+      <p><h5>Section</h5></p>
+      <p>Sections are used to wrap around related pieces of content. Each section typically have their own heading.</p>
+      <p>Article</p>
+      <p> This is self-contained content in a web page. It should be distributable and reusable because of it being independent.</p>
+      <p>Aside</p>
+      <p>The aside element is uusally seen as a sidebar on a website. It represents a portion of a document that is indirectly related to the documents main content. 
+      <p><h6>A Nav Tag </h6></p>
+      <p>The nav provides links either within the current webpage or to others.</p>
 
+      <p><h6>Linking to an element on the same page</h6></p>
+      <p>Comments</p>
+      <p>The tag to make a comment is <-- ... --> A comment is used to explain your code, or insertion points at a later date. There are not viewed in the browser.</p> 
+      <p><h5>Generic elements</h5></p> 
+      <p>Generic elements are used to target content which is most often used later to manipulate styling with CSS (or later with Java script)</p>
+      < divs > are blocke elements used to group elements together 
+      < span > are an inline container used to mark up a part of a text, or document.
+      <p><h5>Attributes</h5></p>
+      <p>Attributes for HTML provide additional information about the HTML elements.</p>
+      <p> for example: href="" is an attribute</p>
+      <p>Linking to an absolute url/path</p>
+      <p>Absolute URLS or Absolutely Paths link websites to other resources on the internet. </p>
+      <img src="Images/AbsoluteURL.png" alt="absolute_paths">
+      <p>Linking to a relative url/path</p>
+      <p>This is a relative url or relative path. It links the path to the current page because it assumes it has the the same protocol, subdomain and domain as the page its on.</p>
+      <img src="images/RelativeURL.png" alt="relative_urls"
+      <p>Linking to an element on the same page</p> 
+      <img src="images/LInk2element.png" alt="Link_to_elements">
+      <p>Understanding nesting (parent/child relationship)</p>
+      <p>Importance of indentation</p>
+      <p>Commenting</p>
+    </article>
+  </section>
+
+  <section id="Week6">
+    <article>
+      <p><h3>Week 6</h3></p>
+      <p>The importance of building accessible websites</p>
+      <p>Web Content Accessibility Guidelines 2.0 (WCAG)</hp> 
+      <p>Types of disabilities / impairments users may have</p>
+      <p>Tips to help with accessibility</p>
+      <p>WAI-ARIA</p>
+      <p>Landmark roles</p>
+      <p>Labeling links</p>
+      <p>Image descriptions</p>
+      <p>Skip links</p>
+    </article>
+  </section>
+
+  <section id="CSS">
+    <article>
+      <p><h3>Week 7</h3></p>
+      <p>Font properties</p>
+      <p>font-family</p>
+      <p>font-size</p>
+      <p>font-weight</p>
+      <p>font-style</p>
+      <p>line-height</p>
+      <p>font shorthand</p>
+      <p>text-decorations</p>
+      <p>text-transform</p>
+      <p>text-decoration</p>
+      <p>text-align</p>
+      <p>text-indent</p>
+      <p>text-shadow</p>
+  </section>
+  <section id="Fonts">
+    <article>
+      <p><h3>CSS</h3></p>
+      <p><img src="/images/DC LOGO.png" alt="DC Logo"></p>
+      <p> This is the reference we used on how to add fonts from google fonts. Click the link below for a step by step</p>
+      <p><a href="https://youtu.be/qgmLDPLApBY">How to add fonts</a></p>
+
+    </article>
+  </section>
+  <section id="Bibliography">
+  <Lastname, F. M. (Year, Month Date). Title of presentation [Lecture notes, PowerPoint slides, etc]. Publisher. URL
+<Smith, C. (2017, October 13). AI and machine learning demystified [PowerPoint slides]. SlideShare. https://www.slideshare.net/carologic/ai-and-machine-learning-demystified-by-carol-smith-at-midwest-ux-2017>
+</section>
 </body>
 </html>
 
