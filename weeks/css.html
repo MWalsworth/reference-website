@@ -65,19 +65,65 @@
     <section id="css">
       <article>
         <p><h2>CSS</h2></p>
-        <p>Font properties</p>
-        <p>font-family</p>
-        <p>font-size</p>
-        <p>font-weight</p>
-        <p>font-style</p>
-        <p>line-height</p>
-        <p>font shorthand</p>
-        <p>text-decorations</p>
-        <p>text-transform</p>
-        <p>text-decoration</p>
-        <p>text-align</p>
-        <p>text-indent</p>
-        <p>text-shadow</p>
+        <h2>Font properties</h2>
+        <dl>
+          <dt><h3>font-size</h3></dt>
+          <dd>For adjusting the size of the font: a single number with a unit (rem [the best choice], em, px)</dd>
+          <dd><span>Ex: 2rem, 1.125em, 24px </span></dd>
+          
+          <dt><h3>font-weight</h3></dt>
+          <dd>Sets how thick or thin characters in text should be displayed</dd>
+          <dd><span>Ex: bold, normal, 700</span></dd>
+          
+          <dt><h3>font-style</h3></dt>
+          <dd>Specifies font style for text</dd>
+          <dd><span>Ex: italic or normal</span></dd>
+          
+          <dt><h3>line-height</h3></dt>
+          <dd>For adjusting the line-height: a single number, a multiplier that multiplies the font-size</dd>
+          <dd><span>Ex: 1.5</span></dd>
+        </dl>
+        <div>
+        <p><h3>font-family</h3></p>
+          <p>The font-family specifies the font for an element that is oterhwise not specified. If the brower support of the first font it will try the second. This is because it relies on a fall back system.</p>
+          <ul>
+            <li><b>a family-name</b> - is the name of a font family.</li>
+            <li><b>gerenic family</b> - is the name of a generic family like serif, athlelas,</li>.
+          </ul>
+      </article>  
+      <article>
+        <h2>Text decorations</h2> 
+        <dl>
+        <dt><h3>Text-transform</h3></dt>
+        <dd>Change capitalization such as uppercase, lowercase, capitalize. It's a good idea to use CSS to make all caps instead of writing it directly in HTML for accessibility reasons.</dd>
+        <dd><span>Ex: uppercase, lowercase, capitalize</span></dd>
+        <dt><h3>Text-decoration</h3></dt>
+        <dd>Specifies the decoration added to text. The only things in a website that should be underlined are links.</dd>
+        <dd><span>Ex: none, underline, line-through, overline</span></dd>
+        <dt><h3>Text-align</h3></dt>
+        <dd>Specifies the horizontal alignment of text in an element</dd>
+        <dd><span>Ex: left, center (American spelling), right, justify</span></dd>
+        <dt><h3>Text-indent</h3></dt>
+        <dd>Indent the first line of text like traditionally printed materials</dd>
+        <dd><span>Ex: 1rem, 2em, 20px, 25% </span></dd>
+        <dt><h3>Text-shadow</h3></dt>
+        <dd>Adding a shadow to the text. Specified like this: text-shadow: horizontal-offset vertical-offset blur-radius colour</dd>
+        <dd><span>text-shadow: 2px 2px #ff0000; </span></dd>
+        </dl>
+      </article>
+      <article>
+        <p><h2>Styling Links</h2></p>
+        <p>Styling links in websites is not really different from other elements, but they must be styled directly, and do not inherit certain properties from their parent elements.</p>
+        
+        <p>Links have a bunch of states that we can also style when a user interacts with them.</p>
+        <ul>
+          <li><b>:link</b> — for styling the default link state</b></li>
+          <li><b>:visited</b> — for styling the link after it']s been visited by the user </li>
+          <li><b>:hover</b> — for styling the link when the mouse is sitting over it</li>
+          <li><b>:focus</b> — for styling the link when the keyboard has tab-focused it</li>
+          <li><b>:active</b> — for styling the link when the mouse button is pressed down on it</li>
+        </ul>
+        <p>It's important that these link states go in this direction: link, visited, hover, focus, active. There's a fun a mnemonic to remember the order: “Lord Vader's Handle Formerly Anakin”.</p> 
       </article>
     </section>
   </main>
