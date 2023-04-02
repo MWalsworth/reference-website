@@ -8,6 +8,14 @@
 </head>
 <body>
   <header>
+    <nav role="top-navigation">
+      <ul>
+        <li><a href="#main-navigation">Skip to navigation</a></li>
+        <li><a href="#main">Skip to the main content</a></li>
+        <li><a href="#css">Skip to CSS</a></li>
+        <li><a href="#footer">Skip to the footer</a></li>
+      </ul>
+    </nav>
     <header role="banner">
     <a href="../index.html" aria-label="return to home page"><img src="../images/homeicon.png" alt="blue and white house with shrubery"/></a>
     <nav id="main-navigation">
@@ -20,7 +28,40 @@
       <li><a href="bibliography.html">Bibliography</a></li>
     </ol>
   </header>
-  <main>
+  <main id="main">
+    <p>In Weeks 8 through to the end of the semester we have been working on CSS.</p>
+    <p>CSS stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets is the language we use to control the appearance of our HTML pages.</p>
+    <p>CSS files mist be linked in the index.html so the browser knows where to look for style sheet. It must be attached within the head of the html document using the link element.</p>
+    <p>As indicated above, the link element must have two attributes in order to be attach the CSS to the HTML. These are:</p>
+    <ul>
+      <li> <b>href</b> - this is to used to point to the location of the css file in whichever folder it may be </li>
+      <li><b>rel</b> - this is to define that this item is a style sheet</li>
+    </ul>
+    <p>It is important to note, that like everything CSS has proper syntax which is written as follows.
+      h1 {
+        color:black
+      }
+    <figure>
+      <img src="../images/css-syntax.png" alt="Proper CSS syntax">
+      <figcaption>This is the reference from the class slides regarding the proper syntax for CSS</figcaption>
+    </figure>
+    <p>As you can see, it is composed of a:</p>
+    <ul>
+      <li><b>Rule set</b> - this is contains the selector and one or plu declarations surrounded by curly braces ({})</li>
+      <li><b>Selector</b> - this is the identifer that the HTML element should be targeting</li>
+      <li><b>Declaration</b> - assigns calue to a property, seperated by a colon. Each declaration must end with a semi-colon.</li>
+      <li><b>Propert</b> - this is the type of design you want to add. For example: width, color, border, etc.</li>
+      <p><b>Value</b> - accepted value for the property. For example: blue when property is related to the the background-color</p>
+    </ul>
+    <p>These are excellent resources of </p>
+    <figure>
+      <img src="../images/selector.png" alt="HTML Selectors">
+      <figcaption>This is the cheat sheet reference from the class slides regarding the HTML selectors</figcaption>
+    </figure>
+    <figure>
+      <img src="../images/pseudo-classes.png" alt="Pseudo Classes">
+      <figcaption>This is the cheat sheet reference from the class slides regarding pseudoclasses</figcaption>
+    </figure>
     <section id="css">
       <article>
         <p><h2>CSS</h2></p>
