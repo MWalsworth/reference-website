@@ -4,28 +4,127 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Week 6 - Accessibility</title>
+  <link href="../css/stylesheet.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Fredericka the Great', cursive;
+      font-family: 'Source Serif Pro', serif;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <header role="banner">
-    <a href="index.html" aria-label="return to home page"><img src="images/homeicon.png" alt="blueandwhite house with shrubery"/></a>
-    <nav role="top-navigation">
-      <ul>
-        <li><a href="#main-navigation">Skip to navigation</a></li>
-        <li><a href="#main">Skip to the main content</a></li>
-        <li><a href="#whatishtml">Skip to What is HTML?</a></li>
-        <li><a href="#weeks4-5">Skip to Weeks 4 & 5</a></li>
-        <li><a href="#week6">Skip to Week 6</a></li>
-        <li><a href="#css">Skip to CSS</a></li>
-        <li><a href="#fonts">Skip to Fonts</a>
-        <li><a href="#bibliography">Skip to Bibliography</a></li> 
-        <li><a href="#footer">Skip to the footer</a></li>
-      </ul>
-    </nav>
-    <h1>Week 6</h1> 
+  <header role="banner">
+    <div>
+      <a href="../index.html" aria-label="return to home page"><img class="logo" src="../Images/homeicon.png" alt="blueandwhite house with shrubery"/></a>
+      <nav role="top-navigation">
+        <ul>
+          <li><a href="#main-navigation">Skip to Navigation</a></li>
+          <li><a href="#main">Skip to the Main Content</a></li>
+          <li><a href="#week6">Skip to Week 6 - Accessibility</a></li> 
+          <li><a href="#footer">Skip to the Footer</a></li>
+        </ul>
+      </nav>
+      <h1>Web Design 1: Assignment: Reference-Website</h1> 
+    </div>  
   </header>
-  
+  <main role="main" id="main">
+    <section id="week6">
+      <h4>See also:</h4>
+      <nav id="main-navigation">
+        <ol>
+          <li><a href="../weeks/whatishtml.html">What Is HTML?</a></li>
+          <li><a href="../weeks/weeks4-5.html">Weeks 4 and 5</a></li>
+          <li><a href="../weeks/css.html">Introduction to CSS</a></li>
+          <li><a href="../weeks/fonts.html">How to Apply Fonts</a></li>
+          <li><a href="../weeks/bibliography.html">Bibliography</a></li>
+        </ol>
+        <article>
+          <h2>Week 6 - Accessibility</h2>
+          <h3>The importance of building accessible websites</h3>
+          <p>It's important to build a website that has the abilitiy to be used by everyone, hence accessibility. This includes users with disabilities. The idea is so that everyone can have the same ideal experience and be able to access the information equally.</p>
+          <h3>Web Content Accessibility Guidelines 2.0 (WCAG)</h3>
+          <p>Websites must comply with WCAG2.0 in order to be considered accessible. And therfore broken into four main categories called POUR.</p>
+          <ul>P.O.U.R stands for:
+            <li><b>P</b>erceivable</li>
+            <li><b>O</b>perable</li>
+            <li><b>U</b>nderstandable</li>
+            <li><b>R</b>obust</li>
+          </ul>
+          <p><b>Perceivable</b>that all information must be presented in such a way to each user despite which senses they have use of, or lack thereof.</p>
+          <p><b>Operable</b> means that each user must be able to locate, navigate and interact with webpages in a myriad of ways</p>
+          <p><b>Understandable</b> is just what it implies. All content must be understandable by its users.</p>
+          <p>Finally, <b>Robust</b> means that websites must adopt web-standards so that they will work across all browsers and assistive technologies.</p>
+          <p><h3>Types of disabilities / impairments users may have</h3></p>
+          <p>It's important to consider all types of disablities/impairements when creating websites in order to make your website accessible to all. Such disabilities/impairements include: <!--I'd like to make clickable buttons to go into detail for each subject below-->
+          <ul>
+            <li>Visual Impairements</li>
+            <li>Cognitive Impairements</li>
+            <li>Auditory Impairements</li>
+            <li>Mobility/dexterity Impairements</li>
+          </ul>
+          <p>Other helpful tips to consider when making your website accessible is to:
+          <ul>
+            <li>Semantic HTML provide extra information that help people use our website.</li>
+            <li>Keep your code & your content in your HTML documents in the order you expect them to be read </li>
+            <li>Break up your content using heading tags. They're nice visual breaks, but screen readers use them as jumping points.</li>
+          </ul>
+          <p><b>Visual impairements</b> include: Blindness; partial or full, colour blindness, cataracts, glaucoma, age, etc.. </p>
+          <ul>
+            <li>Allow text to be resized</li>
+            <li>Have good contrast in colours</li>
+            <li>Test for colour blindness related issues</li>
+            <li>Website must work well with screen readers</li>
+            <li>Use proper alt attributes</li>
+          </ul>
+          <p><b>Cognitive impairements</b> include: Dyslexia, memory issues, problem solving issues, attention deficits, hyperactivity,  reading abilities, etc.</p>
+          <ul>
+            <li>Make it clear where in the website the user is</li>
+            <li>Organize your content correctly</li>
+            <li>Make the text easily scannable</li>
+            <li>Clearly mark links</li>
+            <li>Use plain, simple language</li>
+          </ul>
+          <p><b>Auditory impairements</b> inlcude: Deafness, partial deafness, etc.</p>
+          <ul>
+            <li>Provide text captions and subtitles - when including audio or video on your website.</li>
+            <li>Users may need closed caption while viewing videos due to language barriers or being in a noisy room.</li>
+          </ul>
+          <p><b>Mobility impairements</b> include: Missing a hand, limited movement, difficulty with fine control, trouble holding a mouse, tremors or shakes, etc.</p>
+          <ul>
+            <li>Recognize and prepare for the fact that not everybody will use a mouse</li>
+            <li>Make the website keyboard accessible by making sure you are giving your users alternate ways to access your information</li>
+            <li>hit areas of links and buttons</li>
+          </ul>      
+          <h3>WAI-ARIA</h3>
+          <p><b>Web Accessibility Initiative</b> (WAI) has a specification called <b>Accessible Rich Internet Application (ARIA)</b>. ARIA helps makes web content and applications more accessible to people with disabilities or impairements by defining ways for functionality to be provided to assistive technology like screen readers, screen magnifiers, switch controls, closed captioning etc.</p>
+          <p><h3>Landmark roles</h3></p>
+          <p>ARIA has a set of landmark roles to help those using screen readers to jump directly to specific sections within websites. This includes roles such as:</p>
+          <ul>
+            <li>header role="banner" - this is added in the header tag for defining an element as the masthead.</li>
+            <li>nav role="navigation" - this is added to the top to define the elements as the primary navigation.</li>
+            <li>main role="main" - this is added to the main to define the element as the main content of the page.</li>
+            <li>aside role="complimentary" - this is added to an aside tag as being additional content related to the primary content. </li>
+            <li>footer role="contentinfo" - this is usually added to the footer to define an element as information about the content like copy right, terms, privacy policy, careers ect.</li>
+          </ul>
+          <h3>Labeling links</h3>
+          <p>This semester we have using the < aria - label="" > attribute tags to create labels in fields that have no visual label. Screen readers would give that voice to the missing visual component so that those with these impairements are not losing out on their experience when interacting with our website. <i>Note: we use the tag < role="presentation" > for screen readers to skip these labels when images have no impact on experience. </aria-label> </i></p>
+          <h3>Image descriptions</h3>
+          <p>It is imperative descriptions are added to images with an alt atribute. Thse have two purposes:
+          <ul>
+            <li>To describe a photo if it doesn't download, or,</li>
+            <li>To describe the photo via screen reader to users with visual impairemnts.</li>
+          </ul>
+          <p><i>Note: As mentioned before, you can apply role="presentation" if the image is purely decorative.</i></p>
+          <h3>Skip links</h3>
+          <p>These are placed at the top of the page and offer users a way to jump to specific areas of the page as you would have experienced when interacting with this page.</p>
+        </article>
+    </section>
+    <a href="#top">Return to Top of Page</a>
+  </main> 
 </body>
 </html>
 <footer id="footer" role="contentinfo">

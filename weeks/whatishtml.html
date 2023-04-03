@@ -4,23 +4,155 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>What is HTML</title>
+  <link href="../css/stylesheet.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Fredericka the Great', cursive;
+      font-family: 'Source Serif Pro', serif;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <header role="banner">
-    <a href="../index.html" aria-label="return to home page"><img src="../images/homeicon.png" alt="blue and white house with shrubery"/></a>
-    <nav id="main-navigation">
-      <p>>See also:</p>
-      <ol>
-      <li><a href="../index.html">Homepage</a></li>
-      <li><a href="weeks4-5.html">Weeks 4 and 5</a></li>
-      <li><a href="week6.html">Week 6</a></li>
-      <li><a href="css.html">CSS</a></li>
-      <li><a href="fonts.html">Fonts</a></li>
-      <li><a href="bibliography.html">Bibliography</a></li>
-    </ol>
+  <header role="banner">
+    <div>
+      <a href="../index.html" aria-label="return to home page"><img class="logo" src="../Images/homeicon.png" alt="blueandwhite house with shrubery"/></a>
+      <nav role="top-navigation">
+        <ul>
+          <li><a href="#main-navigation">Skip to Navigation</a></li>
+          <li><a href="#main">Skip to the Main Content</a></li>
+          <li><a href="#whatishtml">Skip to What is HTML</a></li> 
+          <li><a href="#footer">Skip to the Footer</a></li>
+        </ul>
+      </nav>
+      <h1>Web Design 1: Assignment: Reference-Website</h1> 
+    </div>  
   </header>
+  <main role="main" id="main">
+    <section id="whatishtml">
+      <h4>See also:</h4>
+      <nav id="main-navigation">
+        <ol>
+          <li><a href="../weeks/weeks4-5.html">Weeks 4 and 5</a></li>
+          <li><a href="../weeks/week6.html">Week 6 - Accessibility</a></li>
+          <li><a href="../weeks/css.html">Introduction to CSS</a></li>
+          <li><a href="../weeks/fonts.html">How to Apply Fonts</a></li>
+          <li><a href="../weeks/bibliography.html">Bibliography</a></li>
+        </ol>
+        <article>
+        <h2>What is HTML?</h2>
+        <h3>Naming convention for all filenames, paths and folders</h3>
+        <p>Proper naming conventions for all filenames, paths and folders are as follows. 
+        <ul><li>There must be <em>no spaces</em></li>
+        <li>must be <b>all</b> lowercase</li> 
+        <li>and contain only letters, numbers and dashes (-)</li></ul>
+        <p>These pictures were helpful resources to better understand and apply the naming conventions.</p>
+        <figure>
+          <img src="../Images/hiphens.png" alt="Proper naming conventions contains onnly letters, numbers and dashes">
+          <figcaption>This is the reference from the class slides regarding proper naming conventions. In this case, there must contain only letters, numbers and dashes.
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="../Images/Lowercase.png" alt="Proper naming conventions is all in lowercase">
+          <figcaption>This is the reference from the class slides regarding proper naming conventions. In this case, it must all be in lowercase letters</figcaption>
+        </figure>
+        <figure>
+          <img src="../Images/nospaces.png" alt="Proper naming conventions has no spaces">
+          <figcaption>This is the reference from the class slides regarding proper naming conventions. In this case, there must be no spaces.</figcaption>
+        </figure>
+        <h3>Best practices for commit messages</h3>
+        <p>The best practices when commiting a message are:</p>
+        <ul>
+          <li>Minimum 3 words & 10 characters</li>
+          <li>Proper spelling & grammar</li>
+          <li>Capital starting letter, no period</li>
+          <li>Must start with an imperative verb: Create, Fix, Add, Solve, etc.</li>
+          <li>Pretend every commit starts with the phrase: “This commit will…”</li>
+        </ul>
+        <h3>What is HTML?</h3>
+        <p>HTML is the structure and content of a website. It is a declarative language</small></p>
+        <h3>Proper Syntax for HTML tags</h3>
+        <p>The proper sintax of a tag looks like this (below):</p>
+        <p> < h1 > I am a heading < / h1 ></p>
+        <p> The 'H1' in this element is the tag name</p>
+        <p> the 'H1' when placed within the < > is described as an open tag</p>
+        <p> In this case, ' I am a heading' is the element content</p>
+        <p> < / h1> is a closing tag. Closing tags must have a forward slash</p>
+        <p>I have included an image to help understand. This was taken from our class slides. </p>
+        <figure>
+          <img src="../Images/element.png" alt="this is proper sintax for HTML tags">
+          <figcaption>This is the reference from the class slides regarding proper sintax for HTML.</figcaption>
+        </figure>
+        <h3>Explain or demonstrate commonly used html tags/elements:</h3>
+        <h4>headings: h1-h6</h4>
+        <p>Heading tags are used to order headings according to their importance. Starting with h1 as most important and ending with h6 as least. This also speaks to the size. h1 is the biggest leading h6 as the smallest</p>
+        <h1>This</h1>
+        <h2>is</h2>
+        <h3>an</h3>
+        <h4>example</h4>
+        <h5>of</h5>
+        <h6>order</h6>
+        <p>Please note: because you can only have one h1 the first example (this) is not accurate to proper size.</p>
+        <p><h4>Paragraph Tag</h4></p>
+        <p>a paragraph tag < p > defines a paragraph of text. It is a block-level element and always starts on a new line.</p>
+        <h4>Lists</h4>
+        <p>There are three types of lists</p>
+        <ol>
+          <li>Unordered List:</li>
+          <ul>
+            <li>These lists are by default put into bulltet form and and each element is listed using the li tag. For grouping a collection of items that do not have a numerical ordering, and their order in the list is meaningless</li>
+          <li> Uses the tag < ul > </li>
+          </ul>
+          <li>Ordered list:</li>
+          <ul>
+            <li>The elements for this list are indicated using the li tag much like an unordered list. Unlike the unordered list however, the order is of importance and by default the first element of the list will begin with 1, chronilogically decending from there. </li>
+            <li>Uses the tag < ol > </li>
+          </ul>
+          <li>Descriptive List:</li>
+          <ul>
+            <li>This list is seen in text like recipes and require a term (dt) and a description (dd) tag.</li>
+            <li><em>It's important to note that a dl can have more have one dd, but only <b>one</b> dt.</em></li>
+          </ul>
+        </ol>
+        <h4>The a tag</h4>
+        <p>This defines a hyperlink, which is used to link from one page to another. The most important part of an a element is the href atributs which tels the destination of the link. </p>
+        <h4>the img tag</h4>
+        <p>Images are not embedded in the website but are linked to the HTML document. Images need two attributes: the location of the image and the alternative content.</p>
+        <h4>Figure (img & figcaption)</h4>
+        <p>The HTML element < figure > is a self-contained content with an option caption, which is specified with the < figcaption >. The figure, its caption, and its contents are referenced as a single unit. The structre for that would look like this:</p>
+        <p>< figure ></p>
+        <p>< img src="Images / image000000.JPG" alt="animated woman doing needlework" >
+        <p>< figcaption > This is the logo for the crochet cuties < /figcaption >
+        <p></figure></p>
+        <p>Pruducing this:
+        <figure>
+          <img src="../Images/image000000.JPG" alt="animated woman doing needlework">
+          <figcaption>This is the logo for the crochet cuties</figcaption>
+        </figure></p>
+        </p>
+        <h4> The q tag</h4>
+        <p>This is used to mark quotes embedded in other elements like a paragraph</p>
+        <p><h4>blockquote</h4></p>
+        <p>This is to make a pull quote, like you would have in  an magazine</p>
+        <h4>The cite tag</h4>
+        <p>This marks the source of the quote</p>
+        <h4>The em tag</h4>
+        <p>Used for emphasis</p>
+        <h4>The strong tag</h4>
+        <p>Gives strong emphasis, as in importance or urgency to text</p>
+        <h4>The b tag </h4>
+        <p>This to give a visual component to a specific word. In this case it bolds text</p>
+        <h4>The i tag</h4>
+        <p>Gives a visual component ot a specific word. In this case it italicises text</p>
+        <h4>The small tag</h4>
+        <p>The < small > tag defines areas where small text is appropriate like copyright and other side-comments.</p>
+      </article>
+    </section>
+    <a href="#top">Return to Top of Page</a>
+  </main> 
 </body>
 </html>
 <footer id="footer" role="contentinfo">

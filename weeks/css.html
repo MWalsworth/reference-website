@@ -17,34 +17,36 @@
   </style>
 </head>
 <body>
-  <header>
-    <nav role="top-navigation">
-      <ul>
-        <li><a href="#main-navigation">Skip to navigation</a></li>
-        <li><a href="#main">Skip to the main content</a></li>
-        <li><a href="#css">Skip to Introduction to CSS</a></li>
-        <li><a href="#padding">Skip to Padding</a></li>
-        <li><a href="#margin">Skip to Margin</a></li>
-        <li><a href="#fonts">Skip to Fonts</a></li>
-        <li><a href="#shorthand">Skip to Shorthand</a></li>
-        <li><a href="#box">Skip to Everything is a Box Model</a></li>
-        <li><a href="#footer">Skip to the footer</a></li>
-      </ul>
-    </nav>
-    <header role="banner">
-      <a href="../index.html" aria-label="return to home page"><img class="logo" src="../Images/homeicon.png" alt="blue and white house with shrubery"/></a>
-      <nav id="main-navigation">
-        <ol>
-        <li><a href="whatishtml.html">What Is HTML?</a></li>
-        <li><a href="weeks4-5.html">Weeks 4 and 5</a></li>
-        <li><a href="week6.html">Week 6</a></li>
-        <li><a href="fonts.html">Fonts</a></li>
-        <li><a href="bibliography.html">Bibliography</a></li>
-      </ol>
-      <h1>Introduction to CSS</h1>
+  <header role="banner" id="top">
+    <div>
+      <a href="../index.html" aria-label="return to home page"><img class="logo" src="../Images/homeicon.png" alt="blueandwhite house with shrubery"/></a>
+      <nav role="top-navigation">
+        <ul>
+          <li><a href="#main-navigation">Skip to Navigation</a></li>
+          <li><a href="#main">Skip to the Main Content</a></li>
+          <li><a href="#css">Skip to Introduction to CSS</a></li> 
+          <li><a href="#footer">Skip to the Footer</a></li>
+        </ul>
+      </nav>
+      <h1>Web Design 1: Assignment: Reference-Website</h1> 
+    </div>  
   </header>
   <main role="main" id="main">
     <section id="css">
+      <h4>See also:</h4>
+      <article>
+      <nav id="main-navigation">
+        <ol>
+          <li><a href="../weeks/whatishtml.html">What Is HTML?</a></li>
+          <li><a href="../weeks/weeks4-5.html">Weeks 4 and 5</a></li>
+          <li><a href="../weeks/week6.html">Week 6 - Accessibility</a></li>
+          <li><a href="../weeks/css.html">Introduction to CSS</a></li>
+          <li><a href="../weeks/fonts.html">How to Apply Fonts</a></li>
+          <li><a href="../weeks/bibliography.html">Bibliography</a></li>
+        </ol>
+      </article>
+    <section id="css">
+      <h2>Introduction to CSS</h2>
       <p>In Weeks 8 through to the end of the semester we have been working on CSS.</p>
       <p>CSS stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets is the language we use to control the appearance of our HTML pages.</p>
       <p>CSS files mist be linked in the index.html so the browser knows where to look for style sheet. It must be attached within the head of the html document using the link element.</p>
@@ -66,10 +68,10 @@
         <li><b>Rule set</b> - this is contains the selector and one or plu declarations surrounded by curly braces ({})</li>
         <li><b>Selector</b> - this is the identifer that the HTML element should be targeting</li>
         <li><b>Declaration</b> - assigns calue to a property, seperated by a colon. Each declaration must end with a semi-colon.</li>
-        <li><b>Propert</b> - this is the type of design you want to add. For example: width, color, border, etc.</li>
-        <p><b>Value</b> - accepted value for the property. For example: blue when property is related to the the background-color</p>
+        <li><b>Property</b> - this is the type of design you want to add. For example: width, color, border, etc.</li>
+        <li><b>Value</b> - accepted value for the property. For example: blue when property is related to the the background-color</li>
       </ul>
-      <p>These are excellent resources of </p>
+      <p>These are excellent resources of how to style something in CSS by targeting the appropriate element in HTML</p>
       <figure>
         <img src="../Images/selector.png" alt="HTML Selectors">
         <figcaption>This is the cheat sheet reference from the class slides regarding the HTML selectors</figcaption>
@@ -83,24 +85,24 @@
       <article>
         <h3>Font properties</h3>
         <dl>
-          <dt><h4>font-size</h4></dt>
+          <dt><h4>Font-Size</h4></dt>
           <dd>For adjusting the size of the font: a single number with a unit (rem [the best choice], em, px)</dd>
           <dd><span>Ex: 2rem, 1.125em, 24px </span></dd>
           
-          <dt><h4>font-weight</h4></dt>
+          <dt><h4>Font-Weight</h4></dt>
           <dd>Sets how thick or thin characters in text should be displayed</dd>
           <dd><span>Ex: bold, normal, 700</span></dd>
           
-          <dt><h4>font-style</h4></dt>
+          <dt><h4>Font-Style</h4></dt>
           <dd>Specifies font style for text</dd>
           <dd><span>Ex: italic or normal</span></dd>
           
-          <dt><h4>line-height</h4></dt>
+          <dt><h4>Line-Height</h4></dt>
           <dd>For adjusting the line-height: a single number, a multiplier that multiplies the font-size</dd>
           <dd><span>Ex: 1.5</span></dd>
         </dl>
         <div>
-        <p><h4>font-family</h4></p>
+        <p><h4>Font-Family</h4></p>
           <p>The font-family specifies the font for an element that is oterhwise not specified. If the brower support of the first font it will try the second. This is because it relies on a fall back system.</p>
           <ul>
             <li><b>A Family-name</b> - is the name of a font family.</li>
@@ -110,19 +112,19 @@
       <article>
         <h3>Text decorations</h3> 
         <dl>
-        <dt><h4>Text-transform</h4></dt>
+        <dt><h4>Text-Transform</h4></dt>
         <dd>Change capitalization such as uppercase, lowercase, capitalize. It's a good idea to use CSS to make all caps instead of writing it directly in HTML for accessibility reasons.</dd>
         <dd><span>Ex: uppercase, lowercase, capitalize</span></dd>
-        <dt><h4>Text-decoration</h4></dt>
+        <dt><h4>Text-Decoration</h4></dt>
         <dd>Specifies the decoration added to text. The only things in a website that should be underlined are links.</dd>
         <dd><span>Ex: none, underline, line-through, overline</span></dd>
-        <dt><h4>Text-align</h4></dt>
+        <dt><h4>Text-Align</h4></dt>
         <dd>Specifies the horizontal alignment of text in an element</dd>
         <dd><span>Ex: left, center (American spelling), right, justify</span></dd>
-        <dt><h4>Text-indent</h4></dt>
+        <dt><h4>Text-Indent</h4></dt>
         <dd>Indent the first line of text like traditionally printed materials</dd>
         <dd><span>Ex: 1rem, 2em, 20px, 25% </span></dd>
-        <dt><h4>Text-shadow</h4></dt>
+        <dt><h4>Text-Shadow</h4></dt>
         <dd>Adding a shadow to the text. Specified like this: text-shadow: horizontal-offset vertical-offset blur-radius colour</dd>
         <dd><span>text-shadow: 2px 2px #ff0000; </span></dd>
         </dl>
@@ -140,15 +142,6 @@
           <li><b>:active </b> — for styling the link when the mouse button is pressed down on it</li>
         </ul>
         <p>It's important that these link states go in this direction: link, visited, hover, focus, active. There's a fun a mnemonic to remember the order: “Lord Vader's Handle Formerly Anakin”.</p> 
-      </article>
-    </section>
-  
-    <section id="fonts">
-      <article>
-        <p><h2>How to Apply Fonts</h2></p>
-        <p><img class="figure" src="../Images/DC LOGO.png" alt="Logo for Dcode's youtube channel"></p>
-        <p> This is the reference we used on how to add fonts from google fonts. Click the link below for a step by step</p>
-        <p><a href="https://youtu.be/qgmLDPLApBY">How to add fonts</a></p>
       </article>
     </section>
     <section id="box">
@@ -188,16 +181,7 @@
         </ul>
       </article>
     </section>
-    <section id="bibliography" role="bibliography">
-      <article>
-        <p><h2>Bibliography</h2></p>
-        <p>Corso, Domenic. (2021, February 15) Add Custom Fonts to Your Websites Using Google Fonts - HTML & CSS Tutorial [video]Youtube. https://www.youtube.com/watch?v=qgmLDPLApBY</p>
-        <p>Hill, Nicole. (2023, Feb 9) Private conversation. Crostitch cuties [Image].</p>
-        <p>Home Icon. freeicons.io. (n.d.). Retrieved April 1, 2023, from https://freeicons.io/seo/home-icon-12995</p>
-        <p>Warren, Wendy. (2023, January 9 through to April 15th). Web Design 1. [PowerPoint slides]. Brightspace. No URL.</p>
-        <p>Wilkins, J. (2022, June 1). How to Indent HTML Code - And Why it's Important. FreeCodeCamp. Retrieved April 1, 2023, from https://www.freecodecamp.org/news/how-to-indent-in-html-and-why-it-is-important/</p>
-      </article>  
-    </section>
+    <a href="#top">Return to Top of Page</a>
   </main> 
 </body>
 </html>

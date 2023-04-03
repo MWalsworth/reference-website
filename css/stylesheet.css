@@ -23,7 +23,7 @@ h3 {
   color: aliceblue;
   font-size: 20pt;
 }
-h4{
+h1,h4,h5,h6{
   color: aliceblue;
 }
 
@@ -43,20 +43,31 @@ header {
 }
 
 nav a:hover, nav a:focus {
-  background-color: white;
+  background-color: aliceblue;
   color: purple;
   border: solid purple 2px;
 }
 figure {
-  width: 22%;
+  width: 44%;
   display: inline-block;
   text-align: center;
 }
 .figure {
-  width: 22%;
-  display: block;
+  width: 44%;
+  display: inline-block;
   text-align: center;
 }
 footer {
   color: aliceblue;
+}
+b {
+  color:aliceblue;
+}
+figcaption {
+  color: aliceblue;
+  font-style: italic;
+  font-size: 12pt;
+}
+p {
+  text-indent: .5em;
 }

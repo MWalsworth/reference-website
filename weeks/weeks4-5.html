@@ -4,10 +4,98 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Weeks 4 & 5</title>
+  <link href="../css/stylesheet.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Fredericka the Great', cursive;
+      font-family: 'Source Serif Pro', serif;
+    }
+  </style>
 </head>
 <body>
-  
+  <header role="banner">
+    <div>
+      <a href="../index.html" aria-label="return to home page"><img class="logo" src="../Images/homeicon.png" alt="blueandwhite house with shrubery"/></a>
+      <nav role="top-navigation">
+        <ul>
+          <li><a href="#main-navigation">Skip to Navigation</a></li>
+          <li><a href="#main">Skip to the Main Content</a></li>
+          <li><a href="#week4-5">Skip to Weeks 4 & 5 - Accessibility</a></li> 
+          <li><a href="#footer">Skip to the Footer</a></li>
+        </ul>
+      </nav>
+      <h1>Web Design 1: Assignment: Reference-Website</h1> 
+    </div>  
+  </header>
+  <main role="main" id="main">
+    <section>
+      <h4>See also:</h4>
+      <nav id="main-navigation">
+        <ol>
+          <li><a href="../weeks/whatishtml.html">What is HTML?</a></li>
+          <li><a href="../weeks/week6.html">Week 6 - Accessibility</a></li>
+          <li><a href="../weeks/css.html">Introduction to CSS</a></li>
+          <li><a href="../weeks/fonts.html">How to Apply Fonts</a></li>
+          <li><a href="../weeks/bibliography.html">Bibliography</a></li>
+        </ol>
+        <article id="weeks4-5">
+          <h2>Week 4 & 5</h2>
+          <h3>Structuring content:</h3>
+          <h4>Header</h4>
+          <p>The header is the introductory content  at the top of the page. This is where you would find logos and or navs. You may also find it within sections and articles to introduce the content for headings, subheadings and authors. </p>
+          <h4>Footer</h4>
+          <p>The footer is the botom of the webpage. It will include links, copyright informationsm extra information about the company, careers and terms and services.</p>
+          <h4>Main</h4>
+          <p>The main element wraps around the main content of the page. It's used only once per page.</p>
+          <h4>Section</h4>
+          <p>Sections are used to wrap around related pieces of content. Each section typically have their own heading.</p>
+          <h4>Article</h4>
+          <p>This is self-contained content in a web page. It should be distributable and reusable because of it being independent.</p>
+          <h4>Aside</h4>
+          <p>The aside element is uusally seen as a sidebar on a website. It represents a portion of a document that is indirectly related to the documents main content. 
+          <h4>A Nav Tag</h4>
+          <p>The nav provides links either within the current webpage or to others.</p>
+          <h3>Comments</h3>
+          <p>The tag to make a comment is < ! -- ... --> A comment is used to explain your code, or insertion points at a later date. They are not viewed in the browser.</p> 
+          <h3>Generic elements</h3>
+          <p>Generic elements are used to target content which is most often used later to manipulate styling with CSS (or later with Java script)</p>
+          <p>< div > are block elements used to group elements together </p>
+          <p>< span > are an inline container used to mark up a part of a text, or document.</p>
+          <h3>Attributes</h3>
+          <p>Attributes for HTML provide additional information about the HTML elements.</p>
+          <p>For example: href="" is an attribute</p>
+          <h3> Linking to an absolute url/path</h3>
+          <p>Absolute URLS or Absolutely Paths link websites to other resources on the internet</p>
+          <figure>
+            <img src="../Images/AbsoluteURL.png" alt="Absolute URL reference">
+            <figcaption>This is an Absoulte URL reference from class slides</figcaption>
+          </figure>
+          <h3>Linking to a relative url/path</h3>
+          <p>This is a relative url or relative path. It links the path to the current page because it assumes it has the the same protocol, subdomain and domain as the page its on.</p>
+          <figure>
+            <img src="../Images/RelativeURL.png" alt="Relative URL reference">
+            <figcaption>This is an Relative URL reference from class slides</figcaption>
+          </figure> 
+          <h3>Linking to an element on the same page</h3>
+          <p>Linking to an element on the same page is a little different, you need to create an anchor for the link. To do this you must give the appropriate element an id="Content" attribute.</p>
+          <figure>
+            <img src="../Images/LInk2element.png" alt="Linking to an element reference">
+            <figcaption>This is the linking to an element reference from class slides</figcaption>
+          </figure>
+          <p>This was a helpful resource when linking.
+          <p>Click the link to <a href="https://learntheweb.courses/topics/paths-folders/">Read Here</a> to read more about absolute paths, relative paths and linking to elements</p>
+          <h3>Understanding nesting (parent/child relationship)</h3>
+          <p>When learning HTML, the parent-child relationships of the elements is critical to good structure & code understanding. A <b>parent</b> is an element that is directly above and connected to an element in the document tree. An element that is directly contained by another element is said to be the <b>child</b> of that element.</p>
+          <h3>Importance of indentation</h3>
+          <p>When writing HTML it is important to properly format your code using good indentation. You can indent elements by moving them two spaces to the right. This will make your code more readable by other developers and shows the relationship between the child and parent HTML elements. (Wilkins, Jessica 2021)</p>
+        </article>
+    </section>
+    <a href="#top">Return to Top of Page</a>
+  </main> 
 </body>
 </html>
 <footer id="footer" role="contentinfo">

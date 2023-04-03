@@ -17,7 +17,7 @@
   </style>
 </head>
 <body>
-  <header role="banner" id="">
+  <header role="banner">
     <div>
       <a href="index.html" aria-label="return to home page"><img class="logo" src="Images/homeicon.png" alt="blueandwhite house with shrubery"/></a>
       <nav role="top-navigation">
@@ -26,9 +26,9 @@
           <li><a href="#main">Skip to the main content</a></li>
           <li><a href="#whatishtml">Skip to What is HTML?</a></li>
           <li><a href="#weeks4-5">Skip to Weeks 4 & 5</a></li>
-          <li><a href="#week6">Skip to Week 6</a></li>
+          <li><a href="#week6">Skip to Week 6 - Accessibility</a></li>
           <li><a href="#css">Skip to Introduction to CSS</a></li>
-          <li><a href="#fonts">Skip to Fonts</a>
+          <li><a href="#fonts">Skip to How to Apply Fonts</a>
           <li><a href="#bibliography">Skip to Bibliography</a></li> 
           <li><a href="#footer">Skip to the footer</a></li>
         </ul>
@@ -39,320 +39,237 @@
   <main role="main" id="main">
     <nav id="main-navigation">
       <ol>
-      <li><a href="weeks/whatishtml.html">What Is HTML?</a></li>
+      <li><a href="weeks/whatishtml.html">What is HTML?</a></li>
       <li><a href="weeks/weeks4-5.html">Weeks 4 and 5</a></li>
-      <li><a href="weeks/week6.html">Week 6</a></li>
+      <li><a href="weeks/week6.html">Week 6 - Accessibility</a></li>
       <li><a href="weeks/css.html">Introduction to CSS</a></li>
-      <li><a href="weeks/fonts.html">Fonts</a></li>
+      <li><a href="weeks/fonts.html">How to Apply Fonts</a></li>
       <li><a href="weeks/bibliography.html">Bibliography</a></li>
     </ol>
 
-    <p><i>Disclaimer: Please note that all information is, to the best of my capabilities, referenced from class slides. Content such as images from class slides may be used therefore this source applies. All other sourcing, if any, will be applied accordingly</i></p>
+    <p><i>Disclaimer: Please note that all information is, to the best of my capabilities written in my own words. Otherwise, it will be referenced from class slides. Content such as images from class slides may be used therefore the sourcing on the bibliography page applies. All other sourcing, if any, will be applied accordingly. Nothing in either, on this page or any hereinafter within this browser shall be duplicated.</i></p>
     <section id="whatishtml">
-      <div>
-        <article>
-          <p><h2>What is HTML?</h2></p>
-          <p><h3>Naming convention for all filenames, paths and folders</h3></p>
-          <p>Proper naming conventions for all filenames, paths and folders are as follows. 
-          <ul><li>There must be <em>no spaces</em></li>
-          <li>must be <b>all</b> lowercase</li> 
-          <li>and contain only letters, numbers and dashes (-)</li></ul>
-          <p>These pictures were helpful resources to better understand and apply the naming conventions.</p>
-          <figure>
-            <img src="Images/hiphens.png" alt="Proper naming conventions contains onnly letters, numbers and dashes">
-            <figcaption>This is the reference from the class slides regarding proper naming conventions. In this case, there must contain only letters, numbers and dashes.
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="Images/Lowercase.png" alt="Proper naming conventions is all in lowercase">
-            <figcaption>This is the reference from the class slides regarding proper naming conventions. In this case, it must all be in lowercase letters</figcaption>
-          </figure>
-          <figure>
-            <img src="Images/nospaces.png" alt="Proper naming conventions has no spaces">
-            <figcaption>This is the reference from the class slides regarding proper naming conventions. In this case, there must be no spaces.</figcaption>
-          </figure>
-          <p><h3>Best practices for commit messages</h3></p>
-          <p>The best practices when commiting a message are:</p>
+      <article>
+        <h2>What is HTML?</h2>
+        <h3>Naming convention for all filenames, paths and folders</h3>
+        <p>Proper naming conventions for all filenames, paths and folders are as follows. 
+        <ul><li>There must be <em>no spaces</em></li>
+        <li>must be <b>all</b> lowercase</li> 
+        <li>and contain only letters, numbers and dashes (-)</li></ul>
+        <p>These pictures were helpful resources to better understand and apply the naming conventions.</p>
+        <figure>
+          <img src="Images/hiphens.png" alt="Proper naming conventions contains onnly letters, numbers and dashes">
+          <figcaption>This is the reference from the class slides regarding proper naming conventions. In this case, there must contain only letters, numbers and dashes.
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="Images/Lowercase.png" alt="Proper naming conventions is all in lowercase">
+          <figcaption>This is the reference from the class slides regarding proper naming conventions. In this case, it must all be in lowercase letters</figcaption>
+        </figure>
+        <figure>
+          <img src="Images/nospaces.png" alt="Proper naming conventions has no spaces">
+          <figcaption>This is the reference from the class slides regarding proper naming conventions. In this case, there must be no spaces.</figcaption>
+        </figure>
+        <h3>Best practices for commit messages</h3>
+        <p>The best practices when commiting a message are:</p>
+        <ul>
+          <li>Minimum 3 words & 10 characters</li>
+          <li>Proper spelling & grammar</li>
+          <li>Capital starting letter, no period</li>
+          <li>Must start with an imperative verb: Create, Fix, Add, Solve, etc.</li>
+          <li>Pretend every commit starts with the phrase: “This commit will…”</li>
+        </ul>
+        <h3>What is HTML?</h3>
+        <p>HTML is the structure and content of a website. It is a declarative language</small></p>
+        <h3>Proper Syntax for HTML tags</h3>
+        <p>The proper sintax of a tag looks like this (below):</p>
+        <p> < h1 > I am a heading < / h1 ></p>
+        <p> The 'H1' in this element is the tag name</p>
+        <p> the 'H1' when placed within the < > is described as an open tag</p>
+        <p> In this case, ' I am a heading' is the element content</p>
+        <p> < / h1> is a closing tag. Closing tags must have a forward slash</p>
+        <p>I have included an image to help understand. This was taken from our class slides. </p>
+        <figure>
+          <img src="Images/element.png" alt="this is proper sintax for HTML tags">
+          <figcaption>This is the reference from the class slides regarding proper sintax for HTML.</figcaption>
+        </figure>
+        <h3>Explain or demonstrate commonly used html tags/elements:</h3>
+        <h4>headings: h1-h6</h4>
+        <p>Heading tags are used to order headings according to their importance. Starting with h1 as most important and ending with h6 as least. This also speaks to the size. h1 is the biggest leading h6 as the smallest</p>
+        <h1>This</h1>
+        <h2>is</h2>
+        <h3>an</h3>
+        <h4>example</h4>
+        <h5>of</h5>
+        <h6>order</h6>
+        <p>Please note: because you can only have one h1 the first example (this) is not accurate to proper size.</p>
+        <h4>Paragraph Tag</h4>
+        <p>a paragraph tag < p > defines a paragraph of text. It is a block-level element and always starts on a new line.</p>
+        <h4>Lists</h4>
+        <p>There are three types of lists</p>
+        <ol>
+          <li>Unordered List:</li>
           <ul>
-            <li>Minimum 3 words & 10 characters</li>
-            <li>Proper spelling & grammar</li>
-            <li>Capital starting letter, no period</li>
-            <li>Must start with an imperative verb: Create, Fix, Add, Solve, etc.</li>
-            <li>Pretend every commit starts with the phrase: “This commit will…”</li>
+            <li>These lists are by default put into bulltet form and and each element is listed using the li tag. For grouping a collection of items that do not have a numerical ordering, and their order in the list is meaningless</li>
+          <li> Uses the tag < ul > </li>
           </ul>
-          <p><h3>What is HTML?</h3></p> 
-          <p>HTML is the structure and content of a website. It is a declarative language</small></p>
-          <p><h3>Proper Syntax for HTML tags</h3></p> 
-          <p>The proper sintax of a tag looks like this (below):</p>
-          <p> < h1 > I am a heading < / h1 ></p>
-          <p> The 'H1' in this element is the tag name</p>
-          <p> the 'H1' when placed within the < > is described as an open tag</p>
-          <p> In this case, ' I am a heading' is the element content</p>
-          <p> < / h1> is a closing tag. Closing tags must have a forward slash</p>
-          <p>I have included an image to help understand. This was taken from our class slides. </p>
-          <figure>
-            <img src="Images/element.png" alt="this is proper sintax for HTML tags">
-            <figcaption>This is the reference from the class slides regarding proper sintax for HTML.</figcaption>
-          </figure>
-          <p><h3>Explain or demonstrate commonly used html tags/elements:</h3></p>
-          <p><h4>headings: h1-h6</h4></p>
-          <p>Heading tags are used to order headings according to their importance. Starting with h1 as most important and ending with h6 as least. This also speaks to the size. h1 is the biggest leading h6 as the smallest</p>
-          <p><h1>This</h1></p>
-          <p><h2>is</h2></p>
-          <p><h3>an</h3></p>
-          <p><h4>example</h4></p>
-          <p><h5>of</h5></p>
-          <p><h6>order</h6></p>
-          <p>Please note: because you can only have one h1 the first example (this) is not accurate to proper size.</p>
-          <p><h4>Paragraph Tag</h4></p>
-          <p>a paragraph tag < p > defines a paragraph of text. It is a block-level element and always starts on a new line.</p>
-          <p><h4>Lists</h4></p>
-          <p>There are three types of lists</p>
-          <ol>
-            <li>Unordered List:</li>
-            <ul>
-              <li>These lists are by default put into bulltet form and and each element is listed using the li tag. For grouping a collection of items that do not have a numerical ordering, and their order in the list is meaningless</li>
-            <li> Uses the tag < ul > </li>
-            </ul>
-            <li>Ordered list:</li>
-            <ul>
-              <li>The elements for this list are indicated using the li tag much like an unordered list. Unlike the unordered list however, the order is of importance and by default the first element of the list will begin with 1, chronilogically decending from there. </li>
-              <li>Uses the tag < ol > </li>
-            </ul>
-            <li>Descriptive List:</li>
-            <ul>
-              <li>This list is seen in text like recipes and require a term (dt) and a description (dd) tag.</li>
-              <li><em>It's important to note that a dl can have more have one dd, but only <b>one</b> dt.</em></li>
-            </ul>
-          </ol>
-          <p><h4>The a tag</h4></p>
-          <p>This defines a hyperlink, which is used to link from one page to another. The most important part of an a element is the href atributs which tels the destination of the link. </p>
-          <p><h4>the img tag</h4></p>
-          <p>Images are not embedded in the website but are linked to the HTML document. Images need two attributes: the location of the image and the alternative content.</p>
-          <p><h4>Figure (img & figcaption)</h4></p>
-          <p>The HTML element < figure > is a self-contained content with an option caption, which is specified with the < figcaption >. The figure, its caption, and its contents are referenced as a single unit. The structre for that would look like this:</p>
-          <p>< figure ></p>
-          <p>< img src="Images / image000000.JPG" alt="animated woman doing needlework" >
-          <p>< figcaption > This is the logo for the crochet cuties < /figcaption >
-          <p></figure></p>
-          <p>Pruducing this:
-          <figure>
-            <img src="Images/image000000.JPG" alt="animated woman doing needlework">
-            <figcaption>This is the logo for the crochet cuties</figcaption>
-          </figure></p>
-          </p>
-          <p><h4> The q tag</h4></p>
-          <p>This is used to mark quotes embedded in other elements like a paragraph</p>
-          <p><h4>blockquote</h4></p>
-          <p>This is to make a pull quote, like you would have in  an magazine</p>
-          <p><h4>The cite tag</h4></p>
-          <p>This marks the source of the quote</p>
-          <p><h4>The em tag</h4></p> 
-          <p>Used for emphasis</p>
-          <p><h4>The strong tag</h4></p>
-          <p>Gives strong emphasis, as in importance or urgency to text</p>
-          <p><h4>The b tag </h4></p>
-          <p>This to give a visual component to a specific word. In this case it bolds text</p>
-          <p><h4>The i tag</h4></p>
-          <p>Gives a visual component ot a specific word. In this case it italicises text</p>
-          <p><h4>The small tag</h4></p> 
-          <p>The < small > tag defines areas where small text is appropriate like copyright and other side-comments.</p>
-        </article>
-      </div>
+          <li>Ordered list:</li>
+          <ul>
+            <li>The elements for this list are indicated using the li tag much like an unordered list. Unlike the unordered list however, the order is of importance and by default the first element of the list will begin with 1, chronilogically decending from there. </li>
+            <li>Uses the tag < ol > </li>
+          </ul>
+          <li>Descriptive List:</li>
+          <ul>
+            <li>This list is seen in text like recipes and require a term (dt) and a description (dd) tag.</li>
+            <li><em>It's important to note that a dl can have more have one dd, but only <b>one</b> dt.</em></li>
+          </ul>
+        </ol>
+        <p><h4>The a tag</h4></p>
+        <p>This defines a hyperlink, which is used to link from one page to another. The most important part of an a element is the href atributs which tels the destination of the link. </p>
+        <p><h4>the img tag</h4></p>
+        <p>Images are not embedded in the website but are linked to the HTML document. Images need two attributes: the location of the image and the alternative content.</p>
+        <p><h4>Figure (img & figcaption)</h4></p>
+        <p>The HTML element < figure > is a self-contained content with an option caption, which is specified with the < figcaption >. The figure, its caption, and its contents are referenced as a single unit. The structre for that would look like this:</p>
+        <p>< figure ></p>
+        <p>< img src="Images / image000000.JPG" alt="animated woman doing needlework" >
+        <p>< figcaption > This is the logo for the crochet cuties < /figcaption >
+        <p></figure></p>
+        <p>Pruducing this:
+        <figure>
+          <img src="Images/image000000.JPG" alt="animated woman doing needlework">
+          <figcaption>This is the logo for the crochet cuties</figcaption>
+        </figure></p>
+        </p>
+        <p><h4> The q tag</h4></p>
+        <p>This is used to mark quotes embedded in other elements like a paragraph</p>
+        <p><h4>blockquote</h4></p>
+        <p>This is to make a pull quote, like you would have in  an magazine</p>
+        <p><h4>The cite tag</h4></p>
+        <p>This marks the source of the quote</p>
+        <p><h4>The em tag</h4></p> 
+        <p>Used for emphasis</p>
+        <p><h4>The strong tag</h4></p>
+        <p>Gives strong emphasis, as in importance or urgency to text</p>
+        <p><h4>The b tag </h4></p>
+        <p>This to give a visual component to a specific word. In this case it bolds text</p>
+        <p><h4>The i tag</h4></p>
+        <p>Gives a visual component ot a specific word. In this case it italicises text</p>
+        <p><h4>The small tag</h4></p> 
+        <p>The < small > tag defines areas where small text is appropriate like copyright and other side-comments.</p>
+      </article>
     </section>
+    <a href="#top">Return to Top of Page</a>
     <section id="weeks4-5">
-      <article>
-        <h2>Week 4 & 5</h2>
-        <h3>Structuring content:</h3>
-        <h4>Header</h4>
-        <p>The header is the introductory content  at the top of the page. This is where you would find logos and or navs. You may also find it within sections and articles to introduce the content for headings, subheadings and authors. </p>
-        <h4>Footer</h4>
-        <p>The footer is the botom of the webpage. It will include links, copyright informationsm extra information about the company, careers and terms and services.</p>
-        <h4>Main</h4>
-        <p>The main element wraps around the main content of the page. It's used only once per page.</p>
-        <h4>Section</h4>
-        <p>Sections are used to wrap around related pieces of content. Each section typically have their own heading.</p>
-        <h4>Article</h4>
-        <p>This is self-contained content in a web page. It should be distributable and reusable because of it being independent.</p>
-        <h4>Aside</h4>
-        <p>The aside element is uusally seen as a sidebar on a website. It represents a portion of a document that is indirectly related to the documents main content. 
-        <h4>A Nav Tag</h4>
-        <p>The nav provides links either within the current webpage or to others.</p>
-        <h3>Comments</h3>
-        <p>The tag to make a comment is < ! -- ... --> A comment is used to explain your code, or insertion points at a later date. There are not viewed in the browser.</p> 
-        <h3>Generic elements</h3>
-        <p>Generic elements are used to target content which is most often used later to manipulate styling with CSS (or later with Java script)</p>
-        <p>< div > are block elements used to group elements together </p>
-        <p>< span > are an inline container used to mark up a part of a text, or document.</p>
-        <h3>Attributes</h3>
-        <p>Attributes for HTML provide additional information about the HTML elements.</p>
-        <p>For example: href="" is an attribute</p>
-        <h3> Linking to an absolute url/path</h3>
-        <p>Absolute URLS or Absolutely Paths link websites to other resources on the internet</p>
-        <figure>
-          <img src="Images/AbsoluteURL.png" alt="Absolute URL reference">
-          <figcaption>This is an Absoulte URL reference from class slides</figcaption>
-        </figure>
-        <h3>Linking to a relative url/path</h3>
-        <p>This is a relative url or relative path. It links the path to the current page because it assumes it has the the same protocol, subdomain and domain as the page its on.</p>
-        <figure>
-          <img src="Images/RelativeURL.png" alt="Relative URL reference">
-          <figcaption>This is an Relative URL reference from class slides</figcaption>
-        </figure> 
-        <p><h4>Linking to an element on the same page</h4></p>
-        <p>Linking to an element on the same page is a little different, you need to create an anchor for the link. To do this you must give the appropriate element an id="Content" attribute.</p>
-        <figure>
-          <img src="Images/LInk2element.png" alt="Linking to an element reference">
-          <figcaption>This is the linking to an element reference from class slides</figcaption>
-        </figure>
-        <p>This was a helpful resource when linking.
-        <p>Click the link to <a href="https://learntheweb.courses/topics/paths-folders/">Read Here</a> to read more about absolute paths, relative paths and linking to elements</p>
-        <p><h4>Understanding nesting (parent/child relationship)</h4></p>
-        <p>When learning HTML, the parent-child relationships of the elements is critical to good structure & code understanding. A <b>parent</b> is an element that is directly above and connected to an element in the document tree. An element that is directly contained by another element is said to be the <b>child</b> of that element.</p>
-        <p><h4>Importance of indentation</h4></p>
-        <p>When writing HTML it is important to properly format your code using good indentation. You can indent elements by moving them two spaces to the right. This will make your code more readable by other developers and shows the relationship between the child and parent HTML elements. (Wilkins, Jessica 2021)</p>
-      </article>
+      <h2>Weeks 4 & 5</h2>
+      <h3>Structuring content:</h3>
+      <h4>Header</h4>
+      <p>The header is the introductory content  at the top of the page. This is where you would find logos and or navs. You may also find it within sections and articles to introduce the content for headings, subheadings and authors. </p>
+      <h4>Footer</h4>
+      <p>The footer is the botom of the webpage. It will include links, copyright informationsm extra information about the company, careers and terms and services.</p>
+      <h4>Main</h4>
+      <p>The main element wraps around the main content of the page. It's used only once per page.</p>
+      <h4>Section</h4>
+      <p>Sections are used to wrap around related pieces of content. Each section typically have their own heading.</p>
+      <h4>Article</h4>
+      <p>This is self-contained content in a web page. It should be distributable and reusable because of it being independent.</p>
+      <h4>Aside</h4>
+      <p>The aside element is uusally seen as a sidebar on a website. It represents a portion of a document that is indirectly related to the documents main content. 
+      <h4>A Nav Tag</h4>
+      <p>The nav provides links either within the current webpage or to others.</p>
+      <h3>Comments</h3>
+      <p>The tag to make a comment is < ! -- ... --> A comment is used to explain your code, or insertion points at a later date. They are not viewed in the browser.</p> 
+      <h3>Generic elements</h3>
+      <p>Generic elements are used to target content which is most often used later to manipulate styling with CSS (or later with Java script)</p>
+      <p>< div > are block elements used to group elements together </p>
+      <p>< span > are an inline container used to mark up a part of a text, or document.</p>
+      <h3>Attributes</h3>
+      <p>Attributes for HTML provide additional information about the HTML elements.</p>
+      <p>For example: href="" is an attribute</p>
+      <h3> Linking to an absolute url/path</h3>
+      <p>Absolute URLS or Absolutely Paths link websites to other resources on the internet</p>
+      <figure>
+        <img src="Images/AbsoluteURL.png" alt="Absolute URL reference">
+        <figcaption>This is an Absoulte URL reference from class slides</figcaption>
+      </figure>
+      <h3>Linking to a relative url/path</h3>
+      <p>This is a relative url or relative path. It links the path to the current page because it assumes it has the the same protocol, subdomain and domain as the page its on.</p>
+      <figure>
+        <img src="Images/RelativeURL.png" alt="Relative URL reference">
+        <figcaption>This is an Relative URL reference from class slides</figcaption>
+      </figure> 
+      <p><h4>Linking to an element on the same page</h4></p>
+      <p>Linking to an element on the same page is a little different, you need to create an anchor for the link. To do this you must give the appropriate element an id="Content" attribute.</p>
+      <figure>
+        <img src="Images/LInk2element.png" alt="Linking to an element reference">
+        <figcaption>This is the linking to an element reference from class slides</figcaption>
+      </figure>
+      <p>This was a helpful resource when linking.
+      <p>Click the link to <a href="https://learntheweb.courses/topics/paths-folders/">Read Here</a> to read more about absolute paths, relative paths and linking to elements</p>
+      <h4>Understanding nesting (parent/child relationship)</h4>
+      <p>When learning HTML, the parent-child relationships of the elements is critical to good structure & code understanding. A <b>parent</b> is an element that is directly above and connected to an element in the document tree. An element that is directly contained by another element is said to be the <b>child</b> of that element.</p>
+      <p><h4>Importance of indentation</h4></p>
+      <p>When writing HTML it is important to properly format your code using good indentation. You can indent elements by moving them two spaces to the right. This will make your code more readable by other developers and shows the relationship between the child and parent HTML elements. (Wilkins, Jessica 2021)</p>
+    </article>
     </section>
-    <section id="week6">
-      <article>
-        <p><h2>Week 6</h2></p>
-        <p><h4>The importance of building accessible websites</h4></p>
-        <p>It's important to build a website that has the abilitiy to be used by everyone, hence accessibility. This includes users with disabilities. The idea is so that everyone can have the same ideal experience and be able to access the information equally.</p>
-        <p><h4>Web Content Accessibility Guidelines 2.0 (WCAG)</h4></hp> 
-        <p>Websites must comply with WCAG2.0 in order to be considered accessible. And therfore broken into four main categories called POUR.</p>
-        <ul>P.O.U.R stands for:
-          <li><b>P</b>erceivable</li>
-          <li><b>O</b>perable</li>
-          <li><b>U</b>nderstandable</li>
-          <li><b>R</b>obust</li>
-        </ul>
-        <p><b>Perceivable</b>that all information must be presented in such a way to each user despite which senses they have use of, or lack thereof.</p>
-        <p><b>Operable</b> means that each user must be able to locate, navigate and interact with webpages in a myriad of ways</p>
-        <p><b>Understandable</b> is just what it implies. All content must be understandable by its users.</p>
-        <p>Finally, <b>Robust</b> means that websites must adopt web-standards so that they will work across all browsers and assistive technologies.</p>
-        <p><h4>Types of disabilities / impairments users may have</h4></p>
-        <p>It's important to consider all types of disablities/impairements when creating websites in order to make your website accessible to all. Such disabilities/impairements include: <!--I'd like to make clickable buttons to go into detail for each subject below-->
-        <ul>
-          <li>Visual Impairements</li>
-          <li>Cognitive Impairements</li>
-          <li>Auditory Impairements</li>
-          <li>Mobility/dexterity Impairements</li>
-        </ul>
-        <p>Other helpful tips to consider when making your website accessible is to:
-        <ul>
-          <li>Semantic HTML provide extra information that help people use our website.</li>
-          <li>Keep your code & your content in your HTML documents in the order you expect them to be read </li>
-          <li>Break up your content using heading tags. They're nice visual breaks, but screen readers use them as jumping points.</li>
-        </ul>
-        <p><b>Visual impairements</b> include: Blindness; partial or full, colour blindness, cataracts, glaucoma, age, etc.. </p>
-        <ul>
-          <li>Allow text to be resized</li>
-          <li>Have good contrast in colours</li>
-          <li>Test for colour blindness related issues</li>
-          <li>Website must work well with screen readers</li>
-          <li>Use proper alt attributes</li>
-        </ul>
-        <p><b>Cognitive impairements</b> include: Dyslexia, memory issues, problem solving issues, attention deficits, hyperactivity,  reading abilities, etc.</p>
-        <ul>
-          <li>Make it clear where in the website the user is</li>
-          <li>Organize your content correctly</li>
-          <li>Make the text easily scannable</li>
-          <li>Clearly mark links</li>
-          <li>Use plain, simple language</li>
-        </ul>
-        <p><b>Auditory impairements</b> inlcude: Deafness, partial deafness, etc.</p>
-        <ul>
-          <li>Provide text captions and subtitles - when including audio or video on your website.</li>
-          <li>Users may need closed caption while viewing videos due to language barriers or being in a noisy room.</li>
-        </ul>
-        <p><b>Mobility impairements</b> include: Missing a hand, limited movement, difficulty with fine control, trouble holding a mouse, tremors or shakes, etc.</p>
-        <ul>
-          <li>Recognize and prepare for the fact that not everybody will use a mouse</li>
-          <li>Make the website keyboard accessible by making sure you are giving your users alternate ways to access your information</li>
-          <li>hit areas of links and buttons</li>
-        </ul>      
-        <p><h4>WAI-ARIA</h4></p>
-        <p><b>Web Accessibility Initiative</b> (WAI) has a specification called <b>Accessible Rich Internet Application (ARIA)</b>. ARIA helps makes web content and applications more accessible to people with disabilities or impairements by defining ways for functionality to be provided to assistive technology like screen readers, screen magnifiers, switch controls, closed captioning etc.</p>
-        <p><h4>Landmark roles</h4></p>
-        <p>ARIA has a set of landmark roles to help those using screen readers to jump directly to specific sections within websites. This includes roles such as:</p>
-        <ul>
-          <li>header role="banner" - this is added in the header tag for defining an element as the masthead.</li>
-          <li>nav role="navigation" - this is added to the top to define the elements as the primary navigation.</li>
-          <li>main role="main" - this is added to the main to define the element as the main content of the page.</li>
-          <li>aside role="complimentary" - this is added to an aside tag as being additional content related to the primary content. </li>
-          <li>footer role="contentinfo" - this is usually added to the footer to define an element as information about the content like copy right, terms, privacy policy, careers ect.</li>
-        </ul>
-        <p><h4>Labeling links</h4></p>
-        <p>This semester we have using the < aria - label="" > attribute tags to create labels in fields that have no visual label. Screen readers would give that voice to the missing visual component so that those with these impairements are not losing out on their experience when interacting with our website. <i>Note: we use the tag < role="presentation" > for screen readers to skip these labels when images have no impact on experience. </aria-label> </i></p>
-        <p><h4>Image descriptions</h4></p>
-        <p>It is imperative descriptions are added to images with an alt atribute. Thse have two purposes:
-        <ul>
-          <li>To describe a photo if it doesn't download, or,</li>
-          <li>To describe the photo via screen reader to users with visual impairemnts.</li>
-        </ul>
-        <p><i>Note: As mentioned before, you can apply role="presentation" if the image is purely decorative.</i></p>
-        <p><h4>Skip links</h4></p>
-        <p>These are placed at the top of the page and offer users a way to jump to specific areas of the page as you would have experienced when interacting with this page.</p>
-      </article>
-    </section>
+    <a href="#top">Return to Top of Page</a>
     <section id="css">
-    <h2>Introduction to CSS</h2>
-    <p>In Weeks 8 through to the end of the semester we have been working on CSS.</p>
-    <p>CSS stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets is the language we use to control the appearance of our HTML pages.</p>
-    <p>CSS files mist be linked in the index.html so the browser knows where to look for style sheet. It must be attached within the head of the html document using the link element.</p>
-    <p>As indicated above, the link element must have two attributes in order to be attach the CSS to the HTML. These are:</p>
-    <ul>
-      <li> <b>href</b> - this is to used to point to the location of the css file in whichever folder it may be </li>
-      <li><b>rel</b> - this is to define that this item is a style sheet</li>
-    </ul>
-    <p>It is important to note, that like everything CSS has proper syntax which is written as follows.
-      h1 {
-        color:black;
-      }
-    <figure>
-      <img src="Images/css-syntax.png" alt="Proper CSS syntax">
-      <figcaption>This is the reference from the class slides regarding the proper syntax for CSS</figcaption>
-    </figure>
-    <p>As you can see, it is composed of a:</p>
-    <ul>
-      <li><b>Rule set</b> - this is contains the selector and one or plu declarations surrounded by curly braces ({})</li>
-      <li><b>Selector</b> - this is the identifer that the HTML element should be targeting</li>
-      <li><b>Declaration</b> - assigns calue to a property, seperated by a colon. Each declaration must end with a semi-colon.</li>
-      <li><b>Propert</b> - this is the type of design you want to add. For example: width, color, border, etc.</li>
-      <p><b>Value</b> - accepted value for the property. For example: blue when property is related to the the background-color</p>
-    </ul>
-    <p>These are excellent resources of </p>
-    <figure>
-      <img src="Images/selector.png" alt="HTML Selectors">
-      <figcaption>This is the cheat sheet reference from the class slides regarding the HTML selectors</figcaption>
-    </figure>
-    <figure>
-      <img src="Images/pseudo-classes.png" alt="Pseudo Classes">
-      <figcaption>This is the cheat sheet reference from the class slides regarding pseudoclasses</figcaption>
-    </figure>
+      <h2>Introduction to CSS</h2>
+      <p>In Weeks 8 through to the end of the semester we have been working on CSS.</p>
+      <p>CSS stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets is the language we use to control the appearance of our HTML pages.</p>
+      <p>CSS files mist be linked in the index.html so the browser knows where to look for style sheet. It must be attached within the head of the html document using the link element.</p>
+      <p>As indicated above, the link element must have two attributes in order to be attach the CSS to the HTML. These are:</p>
+      <ul>
+        <li> <b>href</b> - this is to used to point to the location of the css file in whichever folder it may be </li>
+        <li><b>rel</b> - this is to define that this item is a style sheet</li>
+      </ul>
+      <p>It is important to note, that like everything CSS has proper syntax which is written as follows.
+        h1 {
+          color:black;
+        }
+      <figure>
+        <img src="Images/css-syntax.png" alt="Proper CSS syntax">
+        <figcaption>This is the reference from the class slides regarding the proper syntax for CSS</figcaption>
+      </figure>
+      <p>As you can see, it is composed of a:</p>
+      <ul>
+        <li><b>Rule set</b> - this is contains the selector and one or plu declarations surrounded by curly braces ({})</li>
+        <li><b>Selector</b> - this is the identifer that the HTML element should be targeting</li>
+        <li><b>Declaration</b> - assigns calue to a property, seperated by a colon. Each declaration must end with a semi-colon.</li>
+        <li><b>Property</b> - this is the type of design you want to add. For example: width, color, border, etc.</li>
+        <li><b>Value</b> - accepted value for the property. For example: blue when property is related to the the background-color</li>
+      </ul>
+      <p>These are excellent resources of how to style something in CSS by targeting the appropriate element in HTML</p>
+      <figure>
+        <img src="Images/selector.png" alt="HTML Selectors">
+        <figcaption>This is the cheat sheet reference from the class slides regarding the HTML selectors</figcaption>
+      </figure>
+      <figure>
+        <img src="Images/pseudo-classes.png" alt="Pseudo Classes">
+        <figcaption>This is the cheat sheet reference from the class slides regarding pseudoclasses</figcaption>
+      </figure>
     </section>
     <section>
       <article>
         <h3>Font properties</h3>
         <dl>
-          <dt><h4>font-size</h4></dt>
+          <dt><h4>Font-Size</h4></dt>
           <dd>For adjusting the size of the font: a single number with a unit (rem [the best choice], em, px)</dd>
           <dd><span>Ex: 2rem, 1.125em, 24px </span></dd>
           
-          <dt><h4>font-weight</h4></dt>
+          <dt><h4>Font-Weight</h4></dt>
           <dd>Sets how thick or thin characters in text should be displayed</dd>
           <dd><span>Ex: bold, normal, 700</span></dd>
           
-          <dt><h4>font-style</h4></dt>
+          <dt><h4>Font-Style</h4></dt>
           <dd>Specifies font style for text</dd>
           <dd><span>Ex: italic or normal</span></dd>
           
-          <dt><h4>line-height</h4></dt>
+          <dt><h4>Line-Height</h4></dt>
           <dd>For adjusting the line-height: a single number, a multiplier that multiplies the font-size</dd>
           <dd><span>Ex: 1.5</span></dd>
         </dl>
         <div>
-        <p><h4>font-family</h4></p>
+        <p><h4>Font-Family</h4></p>
           <p>The font-family specifies the font for an element that is oterhwise not specified. If the brower support of the first font it will try the second. This is because it relies on a fall back system.</p>
           <ul>
             <li><b>A Family-name</b> - is the name of a font family.</li>
@@ -362,19 +279,19 @@
       <article>
         <h3>Text decorations</h3> 
         <dl>
-        <dt><h4>Text-transform</h4></dt>
+        <dt><h4>Text-Transform</h4></dt>
         <dd>Change capitalization such as uppercase, lowercase, capitalize. It's a good idea to use CSS to make all caps instead of writing it directly in HTML for accessibility reasons.</dd>
         <dd><span>Ex: uppercase, lowercase, capitalize</span></dd>
-        <dt><h4>Text-decoration</h4></dt>
+        <dt><h4>Text-Decoration</h4></dt>
         <dd>Specifies the decoration added to text. The only things in a website that should be underlined are links.</dd>
         <dd><span>Ex: none, underline, line-through, overline</span></dd>
-        <dt><h4>Text-align</h4></dt>
+        <dt><h4>Text-Align</h4></dt>
         <dd>Specifies the horizontal alignment of text in an element</dd>
         <dd><span>Ex: left, center (American spelling), right, justify</span></dd>
-        <dt><h4>Text-indent</h4></dt>
+        <dt><h4>Text-Indent</h4></dt>
         <dd>Indent the first line of text like traditionally printed materials</dd>
         <dd><span>Ex: 1rem, 2em, 20px, 25% </span></dd>
-        <dt><h4>Text-shadow</h4></dt>
+        <dt><h4>Text-Shadow</h4></dt>
         <dd>Adding a shadow to the text. Specified like this: text-shadow: horizontal-offset vertical-offset blur-radius colour</dd>
         <dd><span>text-shadow: 2px 2px #ff0000; </span></dd>
         </dl>
@@ -394,15 +311,6 @@
         <p>It's important that these link states go in this direction: link, visited, hover, focus, active. There's a fun a mnemonic to remember the order: “Lord Vader's Handle Formerly Anakin”.</p> 
       </article>
     </section>
-  
-    <section id="fonts">
-      <article>
-        <p><h2>How to Apply Fonts</h2></p>
-        <p><img class="figure" src="Images/DC LOGO.png" alt="Logo for DCode's youtube channel"></p>
-        <p> This is the reference we used on how to add fonts from google fonts. Click the link below for a step by step</p>
-        <p><a href="https://youtu.be/qgmLDPLApBY">How to add fonts</a></p>
-      </article>
-    </section>
     <section id="box">
       <article>
         <h2>Everything is a Box Model</h2>
@@ -420,15 +328,15 @@
         </figure>
         <p>Having a basic idea of the box model is what will help to better understand padding and margin. In a nutshell, padding and margin are properties used to apply space either inside the box (padding) or outside the box(margin)</p>
       </article>
-      <article>
+      <article id="padding">
         <h3>Padding</h3>
         <p>To further explain, Padding adds space inside the box by pushing the content away from the porder. This would mean that any background color is visible with the padding.<p>
       </article>
-      <article>
+      <article id="margin">
         <h3>Margin</h3>
         <p>To further explain, the margin is the invisible space around your box, it adds space surounding your box by pushing away other content away from it.<i>Note: Margins can have positive or negative values</i></p>
       </article>
-      <article>
+      <article id="shorthand">
         <h3>Shorthand</h3> 
         <p>Margin and padding can be specified with their individual properties, but can also be written shorthand as to save time on tediousness.</p>
         <p> It is <em>very</em> important that you always start clocklwise around the box, therefore always starting with the top.</p>
@@ -440,6 +348,15 @@
         </ul>
       </article>
     </section>
+    <section id="fonts">
+      <article>
+        <p><h2>How to Apply Fonts</h2></p>
+        <p><img class="figure" src="Images/DC LOGO.png" alt="Logo for DCode's youtube channel"></p>
+        <p> This is the reference we used on how to add fonts from google fonts. Click the link below for a step-by-step.</p>
+        <p><a href="https://youtu.be/qgmLDPLApBY">How to add fonts</a></p>
+      </article>
+    </section>
+    <a href="#top">Return to Top of Page</a>
     <section id="bibliography" role="bibliography">
       <article>
         <p><h2>Bibliography</h2></p>
@@ -450,7 +367,8 @@
         <p>Wilkins, J. (2022, June 1). How to Indent HTML Code - And Why it's Important. FreeCodeCamp. Retrieved April 1, 2023, from https://www.freecodecamp.org/news/how-to-indent-in-html-and-why-it-is-important/</p>
       </article>  
     </section>
-  </main> 
+  </main>
+  <a href="#top">Return to Top of Page</a> 
 </body>
 </html>
 <footer id="footer" role="contentinfo">
