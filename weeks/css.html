@@ -43,8 +43,8 @@
       </ol>
       <h1>Introduction to CSS</h1>
   </header>
-  <main>
-    <section>
+  <main role="main" id="main">
+    <section id="css">
       <p>In Weeks 8 through to the end of the semester we have been working on CSS.</p>
       <p>CSS stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets is the language we use to control the appearance of our HTML pages.</p>
       <p>CSS files mist be linked in the index.html so the browser knows where to look for style sheet. It must be attached within the head of the html document using the link element.</p>
@@ -71,11 +71,11 @@
       </ul>
       <p>These are excellent resources of </p>
       <figure>
-        <img src="../images/selector.png" alt="HTML Selectors">
+        <img src="../Images/selector.png" alt="HTML Selectors">
         <figcaption>This is the cheat sheet reference from the class slides regarding the HTML selectors</figcaption>
       </figure>
       <figure>
-        <img src="../images/pseudo-classes.png" alt="Pseudo Classes">
+        <img src="../Images/pseudo-classes.png" alt="Pseudo Classes">
         <figcaption>This is the cheat sheet reference from the class slides regarding pseudoclasses</figcaption>
       </figure>
     </section>
@@ -168,15 +168,15 @@
         </figure>
         <p>Having a basic idea of the box model is what will help to better understand padding and margin. In a nutshell, padding and margin are properties used to apply space either inside the box (padding) or outside the box(margin)</p>
       </article>
-      <article>
+      <article id="padding">
         <h3>Padding</h3>
         <p>To further explain, Padding adds space inside the box by pushing the content away from the porder. This would mean that any background color is visible with the padding.<p>
       </article>
-      <article>
+      <article id="margin">
         <h3>Margin</h3>
         <p>To further explain, the margin is the invisible space around your box, it adds space surounding your box by pushing away other content away from it.<i>Note: Margins can have positive or negative values</i></p>
       </article>
-      <article>
+      <article id="shorthand">
         <h3>Shorthand</h3> 
         <p>Margin and padding can be specified with their individual properties, but can also be written shorthand as to save time on tediousness.</p>
         <p> It is <em>very</em> important that you always start clocklwise around the box, therefore always starting with the top.</p>
