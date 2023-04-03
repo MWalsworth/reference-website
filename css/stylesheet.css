@@ -1,7 +1,56 @@
 body {
   font-family: 'Source Serif Pro', serif;
+  color: #222;
+  background-color: rosybrown;
+  line-height: 1.4;
+  font-size: 110%;
+  margin: 0;
 }
-.masthead >h1 {
+div > h1 {
   font-family: 'Fredericka the Great', cursive;
+  color: aliceblue;
   font-size: 50pt;
+  text-align: center;
+}
+h2 {
+  font-family: 'Fredericka the Great', cursive;
+  color: aliceblue;
+  font-size: 30pt;
+  padding: .125em;
+}
+h3 {
+  font-family: 'Frederika the Great', cursive;
+  color: aliceblue;
+  font-size: 20pt;
+}
+
+img {
+  width: 100%;
+}
+header {
+  padding-top: 1.5em;
+  padding-right: 0em;
+  padding-bottom: 1.5em;
+  padding-left: 0;
+}
+.logo {
+  width: 160px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+nav a:hover, nav a:focus {
+  background-color: white;
+  color: purple;
+  border: solid purple 2px;
+}
+figure {
+  width: 22%;
+  display: inline-block;
+  text-align: center;
+}
+.figure {
+  width: 22%;
+  display: block;
+  text-align: center;
 }
