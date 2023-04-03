@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
  <style>
-  title{
+  header {
     font-family: 'Great Vibes', cursive;
   }
   </style>
@@ -130,12 +130,12 @@
         <p><h4>Figure (img & figcaption)</h4></p>
         <p>The HTML element < figure > is a self-contained content with an option caption, which is specified with the < figcaption >. The figure, its caption, and its contents are referenced as a single unit. The structre for that would look like this:</p>
         <p>< figure ></p>
-        <p>< img src="Images / image000000.JPG" alt="animated woman doing needlework" >
+        <p>< img src="images / image000000.JPG" alt="animated woman doing needlework" >
         <p>< figcaption > This is the logo for the crochet cuties < /figcaption >
         <p></figure></p>
         <p>Pruducing this:
         <figure>
-          <img src="Images/image000000.JPG" alt="animated woman doing needlework">
+          <img src="images/image000000.JPG" alt="animated woman doing needlework">
           <figcaption>This is the logo for the crochet cuties</figcaption>
         </figure></p>
         </p>
@@ -187,7 +187,7 @@
         <p><h4> Linking to an absolute url/path</h4><p>
         <p>Absolute URLS or Absolutely Paths link websites to other resources on the internet</p>
         <figure>
-          <img src="Images/AbsoluteURL.png" alt="Absolute URL reference">
+          <img src="images/AbsoluteURL.png" alt="Absolute URL reference">
           <figcaption>This is an Absoulte URL reference from class slides</figcaption>
         </figure>
         <p><h4>Linking to a relative url/path</h4></p>
@@ -303,7 +303,7 @@
     </ul>
     <p>It is important to note, that like everything CSS has proper syntax which is written as follows.
       h1 {
-        color:black
+        color:black;
       }
     <figure>
       <img src="../images/css-syntax.png" alt="Proper CSS syntax">
@@ -395,7 +395,7 @@
     <section id="fonts">
       <article>
         <p><h2>How to Apply Fonts</h2></p>
-        <p><img src="/images/DC LOGO.png" alt="DC Logo"></p>
+        <p><img src="images/DC LOGO.png" alt="Logo for DC's youtube channel"></p>
         <p> This is the reference we used on how to add fonts from google fonts. Click the link below for a step by step</p>
         <p><a href="https://youtu.be/qgmLDPLApBY">How to add fonts</a></p>
       </article>
@@ -405,7 +405,7 @@
         <h2>Everything is a Box Model</h2>
         <p>it is easiest to think as HTML is made up of a box. That measns that HTML is wrapped around by whats called the box model which contains four parts:
         <ul>
-          <li><b>Content</b> - Content is the furst layer which is definied as the basic box</li>
+          <li><b>Content</b> - Content is the first layer which is definied as the basic box</li>
           <li><b>Padding</b> - Padding is the area surrounding the content. It what gives content breathing room by pushing the esge of the box away from the content.</li>
           <li><b>Border</b> - The stroke surrounding padding is called a border. If you had a background color it would stop here. </li>
           <li><b>Margin</b> - is area outside of the box. It is a transparent layet pushing away other boxes. </li>
@@ -415,33 +415,34 @@
           <img src="./images/box.png" alt="Diagram of box model">
           <figcaption>This is a diagram of what the box model looks like with all four listed parts</figcaption>
         </figure>
-        <p>Having a basic idea of the box model is what will help to better understand padding and margin</p>
+        <p>Having a basic idea of the box model is what will help to better understand padding and margin. In a nutshell, padding and margin are properties used to apply space either inside the box (padding) or outside the box(margin)</p>
       </article>
       <article>
         <p><h2>Padding</h2></p>
-        <p>padding adds space inside the box by pushing the content away from the porder. This would mean that any background color is visible with the padding.<p>
+        <p>To further explain, Padding adds space inside the box by pushing the content away from the porder. This would mean that any background color is visible with the padding.<p>
       </article>
       <article>
         <p><h2>Margin</h2></p>
-        <p>The margin is the invisible space around your box, it adds space surounding your box by pushing away other content away from it.<i>Note: Margins can have positive or negative values</i></p>
+        <p>To further explain, the margin is the invisible space around your box, it adds space surounding your box by pushing away other content away from it.<i>Note: Margins can have positive or negative values</i></p>
       </article>
       <article>
         <h2>Shorthand</h2> 
-        <p>Maring and padding can be specified with their individual properties, but can also be written short hand as to save time on tediousness.</p>
-        <p> It is <em>very</em> important that always you start clocklwise around the box, always staring with the top.</p>
-        <p> It is helpful to be able to leave off numbers from the list  because the browser will match the opposing sides values. </p>
-        <p> top, left/right, bottom</p>
-        <p>top/bottom & left/right</p>
-        <p>specifies a magin or padding is equivalent on all our sides.</p>
+        <p>Margin and padding can be specified with their individual properties, but can also be written shorthand as to save time on tediousness.</p>
+        <p> It is <em>very</em> important that you always start clocklwise around the box, therefore always starting with the top.</p>
+        <p> It is helpful that the browser will match the opposing sides valies if a number is missing.</p>
+        <p><b>if there is three numbers provided</b>it will be applied as top, left/right, bottom</p>
+        <p><b>if there are only two numbers provided</b>it will be applied top/bottom & left/right</p>
+        <p><b>if there is only one number</b>it will be specify that the margin or padding is equivalent on all our sides.</p>
       </article>
     </section>
     <section id="bibliography" role="bibliography">
       <article>
-      <p><h2>Bibliography</h2></p>
-      <p>Hill, Nicole. (2023, Feb 9) Private conversation. Crostitch cuties [Image].</p>
-      <p>Home Icon. freeicons.io. (n.d.). Retrieved April 1, 2023, from https://freeicons.io/seo/home-icon-12995</p>
-      <p>Warren, Wendy. (2023, January 9 through to April 15th). Web Design 1. [PowerPoint slides]. Brightspace. No URL.</p>
-      <p>Wilkins, J. (2022, June 1). How to Indent HTML Code - And Why it's Important. FreeCodeCamp. Retrieved April 1, 2023, from https://www.freecodecamp.org/news/how-to-indent-in-html-and-why-it-is-important/</p>
+        <p><h2>Bibliography</h2></p>
+        <p>Corso, Domenic. (2021, February 15) Add Custom Fonts to Your Websites Using Google Fonts - HTML & CSS Tutorial [video]Youtube. https://www.youtube.com/watch?v=qgmLDPLApBY</p>
+        <p>Hill, Nicole. (2023, Feb 9) Private conversation. Crostitch cuties [Image].</p>
+        <p>Home Icon. freeicons.io. (n.d.). Retrieved April 1, 2023, from https://freeicons.io/seo/home-icon-12995</p>
+        <p>Warren, Wendy. (2023, January 9 through to April 15th). Web Design 1. [PowerPoint slides]. Brightspace. No URL.</p>
+        <p>Wilkins, J. (2022, June 1). How to Indent HTML Code - And Why it's Important. FreeCodeCamp. Retrieved April 1, 2023, from https://www.freecodecamp.org/news/how-to-indent-in-html-and-why-it-is-important/</p>
       </article>  
     </section>
   </main> 
